@@ -33,7 +33,7 @@
         <img src="./src/assets/images/logo.png" alt="logo" />
       </div>
       <nav
-        class="navbar-menu px-4 lg:px-[5%] transition-all ease-in divide-blue-400 md:flex items-center justify-between flex-col md:flex-row gap-y-4 w-full bg-gray-200 md:bg-transparent -translate-x-[100%] md:translate-x-0 py-5 md:py-0"
+        class="absolute md:relative navbar-menu px-4 lg:px-[5%] transition-all ease-in divide-blue-400 md:flex items-center justify-between flex-col md:flex-row gap-y-4 w-full bg-gray-200 md:bg-transparent -translate-x-[100%] md:translate-x-0 py-5 md:py-0"
       >
         <div class="">
           <img src="./src/assets/images/logo.png" alt="logo" />
@@ -47,7 +47,21 @@
             >
               <a href="#">Home</a>
               <a href="#">Email's</a>
-              <div class="cursor-pointer items-center relative flex-col">
+
+              <!-- for mobile menu  -->
+              <div class="md:hidden flex flex-col gap-y-4">
+                <a href="#">Blog</a>
+                <a href="#">How to get number</a>
+                <a href="#">How to deposit</a>
+                <a href="#">How to use API</a>
+                <a href="#">Contacts</a>
+                <a href="#">Referrers</a>
+                <a href="#">Developers</a>
+                <a href="#">Soft</a>
+                <a href="#">Partners</a>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer relative hidden md:flex">
                 <div class="flex gap-x-1 lg:gap-x-2 hover:text-black manual">
                   Manuals
                   <img
@@ -83,9 +97,8 @@
                   </ul>
                 </div>
               </div>
-              <div
-                class="cursor-pointer items-center gap-x-2 relative flex-col"
-              >
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
                 <div class="flex gap-x-1 lg:gap-x-2 hover:text-black feedback">
                   FeedBack
                   <img
@@ -111,9 +124,8 @@
                   </ul>
                 </div>
               </div>
-              <div
-                class="cursor-pointer items-center gap-x-2 relative flex-col"
-              >
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
                 <div class="flex gap-x-1 lg:gap-x-2 hover:text-black earnings">
                   Earnings
                   <img
@@ -139,9 +151,8 @@
                   </ul>
                 </div>
               </div>
-              <div
-                class="cursor-pointer items-center gap-x-2 relative flex-col"
-              >
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
                 <div class="flex gap-x-1 lg:gap-x-2 hover:text-black partners">
                   Partners
                   <img
@@ -167,9 +178,8 @@
                   </ul>
                 </div>
               </div>
-              <div
-                class="cursor-pointer items-center gap-x-2 relative flex-col"
-              >
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
                 <div class="flex gap-x-1 lg:gap-x-2 hover:text-black english">
                   English
                   <img
@@ -201,9 +211,16 @@
         <div
           class="cursor-pointer flex items-center lg:gap-x-2 mt-6 md:mt-0 text-xl md:text-sm lg:text-base"
         >
-          <a href="./src/pages/auth/register.html">Register</a>
-          /
-          <a href="./src/pages/auth/login.html">Login</a>
+          <a
+            href="./src/pages/auth/register.html"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >Register</a
+          >
+          <a
+            href="./src/pages/auth/login.html"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >Login</a
+          >
         </div>
       </nav>
       <div class="absolute top-5 right-6 md:hidden humburger-icons">
@@ -213,7 +230,7 @@
     </header>
 
     <!-- main home page  -->
-    <main class="px-[5%] my-12">
+    <main class="px-[5%] mb-12 mt-28 md:my-12">
       <div
         class="w-full bg-gray-100 rounded-xl px-6 py-8 flex flex-col gap-y-6"
       >
@@ -298,35 +315,35 @@
 
       <!-- buttons  -->
       <div
-        class="flex justify-between items-center my-6 text-white w-full gap-x-12"
+        class="flex flex-col md:flex-row justify-between items-center my-6 text-white w-full gap-y-4 md:gap-x-12"
       >
         <button
-          class="bg-[#4169E1] hover:bg-[#5f7dd9] py-2 w-1/2 text-center rounded-md cursor-pointer text-xl"
+          class="bg-[#4169E1] hover:bg-[#5f7dd9] py-2 w-full md:w-1/2 text-center rounded-md cursor-pointer md:text-xl"
         >
           SMS received statistics
         </button>
         <button
-          class="bg-[#4169E1] hover:bg-[#5f7dd9] py-2 w-1/2 text-center rounded-md cursor-pointer text-xl"
+          class="bg-[#4169E1] hover:bg-[#5f7dd9] py-2 w-full md:w-1/2 text-center rounded-md cursor-pointer md:text-xl"
         >
           Number received statistics
         </button>
       </div>
 
       <!-- details section  -->
-      <div class="w-full h-screen bg-gray-100 rounded-xl p-6">
+      <div class="w-full bg-gray-100 rounded-xl p-6">
         <div>
           <h1 class="font-semibold text-2xl">Get number</h1>
           <div
-            class="w-1/2 flex items-center justify-between gap-x-4 mt-6 flex-col"
+            class="md:w-1/2 flex items-center justify-between gap-x-4 mt-6 flex-col"
           >
-            <div class="w-full flex items-center gap-8">
+            <div class="w-full flex items-center gap-x-2 md:gap-x-8">
               <button
-                class="py-3 text-xl rounded-md hover:shadow-xl hover:scale-x-105 duration-300 shadow-md w-1/2 flex justify-center bg-white"
+                class="py-3 text-base sm:text-xl rounded-md hover:shadow-xl hover:scale-x-105 duration-300 shadow-md w-1/2 flex justify-center bg-white"
               >
                 WholeSale prices
               </button>
               <button
-                class="py-3 text-xl rounded-md hover:shadow-xl hover:scale-x-105 duration-300 shadow-md w-1/2 flex justify-center"
+                class="py-3 text-base sm:text-xl rounded-md hover:shadow-xl hover:scale-x-105 duration-300 shadow-md w-1/2 flex justify-center"
               >
                 Retail prices
               </button>
@@ -342,7 +359,9 @@
 
           <!-- services and card  -->
           <div class="w-full flex mt-12 flex-col">
-            <div class="w-full flex items-center gap-x-8">
+            <div
+              class="w-full flex flex-col gap-y-4 md:flex-row items-center gap-x-8"
+            >
               <div class="w-full flex flex-col gap-y-2">
                 <label class="font-semibold">Services</label>
                 <select
@@ -363,22 +382,22 @@
 
             <!-- products  -->
 
-            <div class="grid grid-cols-2 pt-12 gap-8">
+            <div class="grid md:grid-cols-2 pt-12 gap-4 lg:gap-8">
               <div class="bg-white px-4 py-6 rounded-md shadow-md">
                 <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-x-4">
+                  <div class="flex items-center gap-x-2 md:gap-x-4">
                     <img
                       src="./src/assets/images/flag.png"
-                      class="h-[40px] w-[60px]"
+                      class="md:h-[40px] w-[50px] md:w-[60px]"
                       alt=""
                     />
-                    <div class="leading-5">
+                    <div class="leading-5 text-sm md:text-base">
                       <h1>Ukraine</h1>
                       <p>Count: 11</p>
                     </div>
                   </div>
                   <div
-                    class="border-2 p-4 flex items-center gap-x-2 rounded-md"
+                    class="border-2 p-2 lg:p-4 flex items-center gap-x-2 rounded-md text-xs lg:text-base text-center"
                   >
                     <input type="checkbox" name="" id="" class="" />
                     <p>Max price + Api</p>
@@ -393,7 +412,7 @@
                     </div>
                   </div>
                   <div
-                    class="border-2 py-2 text-white px-10 flex items-center gap-x-2 rounded-md bg-[#4169E1]"
+                    class="border-2 py-2 text-white px-4 text-sm md:text-base lg:px-10 flex items-center rounded-md bg-[#4169E1]"
                   >
                     Buy number
                   </div>
@@ -405,8 +424,10 @@
       </div>
     </main>
 
-    <!-- <footer class="flex justify-center items-center py-6">
+    <footer
+      class="flex justify-center items-center py-6 bg-gray-100 text-sm md:text-base"
+    >
       <p>© 2024 smslive.pro. All rights reserved. Agreement.</p>
-    </footer> -->
+    </footer>
   </body>
 </html>

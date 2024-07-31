@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- output css  -->
+    <link href="./src/style/output.css" rel="stylesheet" />
+
+    <!-- icons links  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- tailwindcss cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- external js -->
+    <script src="./src/js/index.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>SMSLIVE.PRO</title>
+  </head>
+  <body>
+    <!-- header  -->
+    <header
+      class="border-b border-gray-200 md:py-2 flex flex-col md:flex-row items-center justify-between w-full text-gray-500 text-sm"
+    >
+      <div class="md:hidden absolute top-4 left-4">
+        <img src="./src/assets/images/logo.png" alt="logo" />
+      </div>
+      <nav
+        class="navbar-menu px-4 lg:px-[5%] transition-all ease-in divide-blue-400 md:flex items-center justify-between flex-col md:flex-row gap-y-4 w-full bg-gray-200 md:bg-transparent -translate-x-[100%] md:translate-x-0 py-5 md:py-0"
+      >
+        <div class="">
+          <img src="./src/assets/images/logo.png" alt="logo" />
+        </div>
+        <div
+          class="flex flex-col md:flex-row md:items-center gap-x-2 lg:gap-x-12"
+        >
+          <div class="">
+            <ul
+              class="flex flex-col md:flex-row md:items-center gap-x-2 gap-y-5 xl:gap-x-8 text-xl md:text-base mt-6 md:mt-0"
+            >
+              <a href="#">Home</a>
+              <a href="#">Email's</a>
+              <div class="cursor-pointer items-center relative flex-col">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black manual">
+                  Manuals
+                  <img
+                    src="./src/assets/icons/chevron-down-solid.svg"
+                    class="w-[12px]"
+                    alt=""
+                  />
+                </div>
+                <div class="manual-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="#"
+                      >Blog</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="#"
+                      >How to get number</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="#"
+                      >How to deposit</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="#"
+                      >How to use API</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="cursor-pointer items-center gap-x-2 relative flex-col"
+              >
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black feedback">
+                  FeedBack
+                  <img
+                    src="./src/assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="feedback-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="#"
+                      >News</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="#"
+                      >Contacts</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="cursor-pointer items-center gap-x-2 relative flex-col"
+              >
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black earnings">
+                  Earnings
+                  <img
+                    src="./src/assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="earnings-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="#"
+                      >Referrers</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="#"
+                      >Developers</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="cursor-pointer items-center gap-x-2 relative flex-col"
+              >
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black partners">
+                  Partners
+                  <img
+                    src="./src/assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="partners-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="#"
+                      >Soft</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="#"
+                      >Partners</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="cursor-pointer items-center gap-x-2 relative flex-col"
+              >
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black english">
+                  English
+                  <img
+                    src="./src/assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="english-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="#"
+                      >English</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="#"
+                      >Pyccknn</a
+                    >
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="cursor-pointer flex items-center lg:gap-x-2 mt-6 md:mt-0 text-xl md:text-sm lg:text-base"
+        >
+          <a href="./src/pages/auth/register.html">Register</a>
+          /
+          <a href="./src/pages/auth/login.html">Login</a>
+        </div>
+      </nav>
+      <div class="absolute top-5 right-6 md:hidden humburger-icons">
+        <i class="fa-solid fa-bars text-2xl cursor-pointer humburger"></i>
+        <i class="fa-solid fa-xmark text-2xl cursor-pointer close hidden"></i>
+      </div>
+    </header>
+
+    <!-- main home page  -->
+    <main class="px-[5%] my-12">
+      <div
+        class="w-full bg-gray-100 rounded-xl px-6 py-8 flex flex-col gap-y-6"
+      >
+        <div>
+          <h1 class="font-semibold text-2xl">
+            How does SMSLIVE.PRO service work?
+          </h1>
+          <p class="pt-2 leading-6 text-base text-gray-500">
+            Service SMSLIVE.PRO gives you the opportunity to get SMS or pass
+            verification by calling a number that is in no way connected with
+            you, your location or passport data. You don't need to buy a SIM
+            card - use a one-time number and get a confirmation code on the
+            SMSLIVE.PRO website
+          </p>
+        </div>
+
+        <div>
+          <h1 class="font-semibold text-2xl">What is a virtual number?</h1>
+          <p class="pt-2 leading-6 text-base text-gray-500">
+            This is a temporary phone number that functions without a SIM card
+            and is not tied to a specific device. Communication is done via the
+            internet with the help of certain software. Usually such numbers
+            only accept SMS for registration, but the SMSLIVE.PRO service also
+            supports verification by call and voice bot.
+          </p>
+        </div>
+
+        <div>
+          <h1 class="font-semibold text-2xl">
+            Why do I need a virtual number?
+          </h1>
+          <p class="pt-2 leading-6 text-base text-gray-500">
+            What might you need to register for a «virtual» number for? Here are
+            some examples from our customers:
+          </p>
+          <ul class="px-5 pt-2 leading-6 text-base text-gray-500">
+            <li class="list-disc">
+              Register a new account in social networks or messengers without
+              using an additional SIM card.
+            </li>
+            <li class="list-disc">
+              Create accounts en masse, network them, sell them on an exchange
+              or use them for personal use.
+            </li>
+            <li class="list-disc">
+              Do commercial mailings, promote products or services without using
+              a personal account.
+            </li>
+            <li class="list-disc">
+              Get bonuses, promo codes and discounts for registering in
+              marketplaces and other services.
+            </li>
+
+            <li class="list-disc">
+              Bypass geographical restrictions when registering using numbers
+              from different countries.
+            </li>
+            <li class="list-disc">
+              Maintain anonymity on social networks, messengers, and forums.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h1 class="font-semibold text-2xl">Advantages:</h1>
+          <p class="pt-2 leading-6 text-base text-gray-500">
+            More than 200 countries - we are constantly expanding our geography.
+            <br />
+
+            Verify accounts by text, number or bot call. <br />
+
+            Convenient replenishment via crypto exchange. <br />
+
+            Profitable affiliate program - invite to SMSLIVE.PRO and earn.
+            <br />
+
+            Developing software for registrations? We will provide API and great
+            conditions! <br />
+          </p>
+        </div>
+      </div>
+
+      <!-- buttons  -->
+      <div
+        class="flex justify-between items-center my-6 text-white w-full gap-x-12"
+      >
+        <button
+          class="bg-[#4169E1] hover:bg-[#5f7dd9] py-2 w-1/2 text-center rounded-md cursor-pointer text-xl"
+        >
+          SMS received statistics
+        </button>
+        <button
+          class="bg-[#4169E1] hover:bg-[#5f7dd9] py-2 w-1/2 text-center rounded-md cursor-pointer text-xl"
+        >
+          Number received statistics
+        </button>
+      </div>
+
+      <!-- details section  -->
+      <div class="w-full h-screen bg-gray-100 rounded-xl p-6">
+        <div>
+          <h1 class="font-semibold text-2xl">Get number</h1>
+          <div
+            class="w-1/2 flex items-center justify-between gap-x-4 mt-6 flex-col"
+          >
+            <div class="w-full flex items-center gap-8">
+              <button
+                class="py-3 text-xl rounded-md hover:shadow-xl hover:scale-x-105 duration-300 shadow-md w-1/2 flex justify-center bg-white"
+              >
+                WholeSale prices
+              </button>
+              <button
+                class="py-3 text-xl rounded-md hover:shadow-xl hover:scale-x-105 duration-300 shadow-md w-1/2 flex justify-center"
+              >
+                Retail prices
+              </button>
+            </div>
+            <div class="mt-5">
+              This section is more suitable for getting acquainted with prices
+              and statistics of receiving sms. It is possible to manually get a
+              number or text here, but quite difficult. This is due to the fact
+              that a lot of users use our partners' software to get a number. If
+              you need a large number of numbers - we advise you to use the API.
+            </div>
+          </div>
+
+          <!-- services and card  -->
+          <div class="w-full flex mt-12 flex-col">
+            <div class="w-full flex items-center gap-x-8">
+              <div class="w-full flex flex-col gap-y-2">
+                <label class="font-semibold">Services</label>
+                <select
+                  class="py-3 px-6 outline-none text-xl rounded-md hover:shadow-xl duration-300 shadow-md w-full flex justify-center bg-white"
+                >
+                  <option value="">Whatsapp</option>
+                  <option value="">telegram</option>
+                </select>
+              </div>
+              <div class="w-full flex flex-col gap-y-2">
+                <label class="font-semibold">Search Countries</label>
+                <input
+                  placeholder="search countries"
+                  class="py-3 text-xl rounded-md hover:shadow-xl duration-300 shadow-md w-full flex justify-center outline-none px-4"
+                />
+              </div>
+            </div>
+
+            <!-- products  -->
+
+            <div class="grid grid-cols-2 pt-12 gap-8">
+              <div class="bg-white px-4 py-6 rounded-md shadow-md">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-x-4">
+                    <img
+                      src="./src/assets/images/flag.png"
+                      class="h-[40px] w-[60px]"
+                      alt=""
+                    />
+                    <div class="leading-5">
+                      <h1>Ukraine</h1>
+                      <p>Count: 11</p>
+                    </div>
+                  </div>
+                  <div
+                    class="border-2 p-4 flex items-center gap-x-2 rounded-md"
+                  >
+                    <input type="checkbox" name="" id="" class="" />
+                    <p>Max price + Api</p>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between mt-6">
+                  <div class="flex items-center gap-x-4">
+                    <div class="border bg-gray-100 flex items-center">
+                      <i class="fa-solid fa-minus py-1 px-2 cursor-pointer"></i>
+                      <p class="px-4 bg-white py-1">$29.3</p>
+                      <i class="fa-solid fa-plus py-1 px-2 cursor-pointer"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="border-2 py-2 text-white px-10 flex items-center gap-x-2 rounded-md bg-[#4169E1]"
+                  >
+                    Buy number
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <footer class="flex justify-center items-center py-6">
+      <p>© 2024 smslive.pro. All rights reserved. Agreement.</p>
+    </footer> -->
+  </body>
+</html>

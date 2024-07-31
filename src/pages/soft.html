@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- output css  -->
+    <link href="../style/output.css" rel="stylesheet" />
+
+    <!-- icons links  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- tailwindcss cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- external js -->
+    <script src=".././js/index.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Autoregers</title>
+  </head>
+  <body>
+    <!-- header  -->
+    <header
+      class="border-b border-gray-200 md:py-2 flex flex-col md:flex-row items-center justify-between w-full text-gray-500 text-sm"
+    >
+      <div class="md:hidden absolute top-4 left-4">
+        <img src=".././assets/images/logo.png" alt="logo" />
+      </div>
+      <nav
+        class="absolute md:relative navbar-menu px-4 lg:px-[5%] transition-all ease-in divide-blue-400 md:flex items-center justify-between flex-col md:flex-row gap-y-4 w-full bg-gray-200 md:bg-transparent -translate-x-[100%] md:translate-x-0 py-5 md:py-0"
+      >
+        <div class="">
+          <img src=".././assets/images/logo.png" alt="logo" />
+        </div>
+        <div
+          class="flex flex-col md:flex-row md:items-center gap-x-2 lg:gap-x-12"
+        >
+          <div class="">
+            <ul
+              class="flex flex-col md:flex-row md:items-center gap-x-2 gap-y-5 xl:gap-x-8 text-xl md:text-base mt-6 md:mt-0"
+            >
+              <a href="../../index.html">Home</a>
+              <a href="../pages/emails.html">Email's</a>
+
+              <!-- for mobile menu  -->
+              <div class="md:hidden flex flex-col gap-y-4">
+                <a href="../pages/blog.html">Blog</a>
+                <a href="../pages/getNumber.html">How to get number</a>
+                <a href="../pages/deposit.html">How to deposit</a>
+                <a href="../pages/useApi.html">How to use API</a>
+                <a href="../pages/contacts.html">Contacts</a>
+                <a href="../pages/referrers.html">Referrers</a>
+                <a href="../pages/developers.html">Developers</a>
+                <a href="../pages/soft.html">Soft</a>
+                <a href="../pages/partners.html">Partners</a>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black manual">
+                  Manuals
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px]"
+                    alt=""
+                  />
+                </div>
+                <div class="manual-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/blog.html"
+                      >Blog</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/getNumber.html"
+                      >How to get number</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/deposit.html"
+                      >How to deposit</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/useApi.html"
+                      >How to use API</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black feedback">
+                  FeedBack
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="feedback-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/news.html"
+                      >News</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/contacts.html"
+                      >Contacts</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black earnings">
+                  Earnings
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="earnings-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/referrers.html"
+                      >Referrers</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/developers.html"
+                      >Developers</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black partners">
+                  Partners
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="partners-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/soft.html"
+                      >Soft</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/partners.html"
+                      >Partners</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black english">
+                  Languages
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="english-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/english.html"
+                      >English</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/pyccknn.html"
+                      >Pyccknn</a
+                    >
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="cursor-pointer flex items-center lg:gap-x-2 mt-6 md:mt-0 text-xl md:text-sm lg:text-base"
+        >
+          <a
+            href="../pages/auth/register.html"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >Register</a
+          >
+          <a
+            href="../pages/auth/login.html"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >Login</a
+          >
+        </div>
+      </nav>
+      <div class="absolute top-5 right-6 md:hidden humburger-icons">
+        <i class="fa-solid fa-bars text-2xl cursor-pointer humburger"></i>
+        <i class="fa-solid fa-xmark text-2xl cursor-pointer close hidden"></i>
+      </div>
+    </header>
+
+    <!-- main home page  -->
+    <main class="px-[5%] mb-12 mt-28 md:my-12">
+      <div
+        class="w-full bg-gray-100 rounded-xl px-6 py-8 flex flex-col gap-y-6"
+      >
+        <!-- softs  -->
+        <div class="w-full px-2 md:px-[5%] grid lg:grid-cols-2 gap-6">
+          <div
+            class="bg-white hover:shadow-xl  px-4 shadow-md border-t-2 border-gray-300 py-4 rounded-md"
+          >
+            <div class="w-1/2">
+              <img src="../assets/images/telegramExpert.jpg" alt="" />
+            </div>
+            <div class="flex flex-col gap-y-1 mt-3">
+              <h1>Telegram</h1>
+              <h1>Автоматическая регистрация Telegram аккаунтов</h1>
+              <h1><span class="text-gray-400">Service:</span> Telegram</h1>
+              <a
+                href="https://ru.telegramexpert.pro/"
+                class="text-blue-600 text-sm"
+                >https://ru.telegramexpert.pro/</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white hover:shadow-xl px-4 shadow-md border-t-2 border-gray-300 py-4 rounded-md"
+          >
+            <div class="w-1/2">
+              <img src="../assets/images/Tg-giant.jpg" alt="" />
+            </div>
+            <div class="flex flex-col gap-y-1 mt-3">
+              <h1>TG-GIANT</h1>
+              <h1>Автоматическая регистрация Telegram аккаунтов</h1>
+              <h1><span class="text-gray-400">Service:</span> Telegram</h1>
+              <a href="https://tg-giant.ru/" class="text-blue-600 text-sm"
+                >https://tg-giant.ru/</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-white hover:shadow-xl px-4 shadow-md border-t-2 border-gray-300 py-4 rounded-md"
+          >
+            <div class="w-1/2">
+              <img src="../assets/images/telegramPrime.jpg" alt="" />
+            </div>
+            <div class="flex flex-col gap-y-1 mt-3">
+              <h1>Telegram Prime</h1>
+              <h1>Автоматическая регистрация Telegram аккаунтов</h1>
+              <h1><span class="text-gray-400">Service:</span> Telegram</h1>
+              <a href="https://telegramprime.com/" class="text-blue-600 text-sm"
+                >https://telegramprime.com/</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white hover:shadow-xl px-4 shadow-md border-t-2 border-gray-300 py-4 rounded-md"
+          >
+            <div class="w-1/2">
+              <img src="../assets/images/whatMessanger.jpg" alt="" />
+            </div>
+            <div class="flex flex-col gap-y-1 mt-3">
+              <h1>Unimessenger</h1>
+              <h1>Автоматическая регистрация Telegram аккаунтов</h1>
+              <h1><span class="text-gray-400">Service:</span> WhatsApp</h1>
+              <a href="https://unimessenger.ru/" class="text-blue-600 text-sm"
+                >https://unimessenger.ru/</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-white hover:shadow-xl px-4 shadow-md border-t-2 border-gray-300 py-4 rounded-md"
+          >
+            <div class="w-1/2">
+              <img src="../assets/images/telegramPrime.jpg" alt="" />
+            </div>
+            <div class="flex flex-col gap-y-1 mt-3">
+              <h1>YandexAUTO</h1>
+              <h1>Автоматическая регистрация Telegram аккаунтов</h1>
+              <h1><span class="text-gray-400">Service:</span> Yandex</h1>
+              <a
+                href="https://zelenka.guru/threads/5780528/"
+                class="text-blue-600 text-sm"
+                >https://zelenka.guru/threads/5780528/</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white hover:shadow-xl px-4 shadow-md border-t-2 border-gray-300 py-4 rounded-md"
+          >
+            <div class="w-1/2">
+              <img src="../assets/images/mailauto.jpg" alt="" />
+            </div>
+            <div class="flex flex-col gap-y-1 mt-3">
+              <h1>MailAUTO</h1>
+              <h1>Автоматическая регистрация Telegram аккаунтов</h1>
+              <h1><span class="text-gray-400">Service:</span> Mail.ru</h1>
+              <a
+                href="https://zelenka.guru/threads/5982150/#post-42612106"
+                class="text-blue-600 text-sm"
+                >https://zelenka.guru/threads/5982150/#post-42612106</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-white hover:shadow-xl px-4 shadow-md border-t-2 border-gray-300 py-4 rounded-md"
+          >
+            <div class="w-1/2">
+              <img src="../assets/images/facebook.jpg" alt="" />
+            </div>
+            <div class="flex flex-col gap-y-1 mt-3">
+              <h1>FARMIT</h1>
+              <h1>Автоматическая регистрация Telegram аккаунтов</h1>
+              <h1><span class="text-gray-400">Service:</span> FaceBook</h1>
+              <a
+                href="https://zenno.club/discussion/threads/farmit-soft-dlja-registracii-i-farma-akkauntov-facebook.115148/"
+                class="text-blue-600 text-sm"
+                >https://zenno.club/discussion/threads/farmit-soft-dlja-registracii-i-farma-akkauntov-facebook.115148/</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white hover:shadow-xl px-4 shadow-md border-t-2 border-gray-300 py-4 rounded-md"
+          >
+            <div class="w-1/2">
+              <img src="../assets/images/sar.jpg" alt="" />
+            </div>
+            <div class="flex flex-col gap-y-1 mt-3">
+              <h1>SAR</h1>
+              <h1>Автоматическая регистрация Telegram аккаунтов</h1>
+              <h1><span class="text-gray-400">Service:</span> Steam</h1>
+              <a
+                href="https://community.bablosoft.com/topic/25167/ABTOper-akkayHTOB-steam"
+                class="text-blue-600 text-sm"
+                >https://community.bablosoft.com/topic/25167/ABTOper-akkayHTOB-steam</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-white hover:shadow-xl px-4 shadow-md border-t-2 border-gray-300 py-4 rounded-md"
+          >
+            <div class="w-1/2">
+              <img src="../assets/images/tg-pixel.jpg" alt="" />
+            </div>
+            <div class="flex flex-col gap-y-1 mt-3">
+              <h1>TG PIXEL</h1>
+              <h1>Автоматическая регистрация Telegram аккаунтов</h1>
+              <h1><span class="text-gray-400">Service:</span> Telegram</h1>
+              <a
+                href="https://zelenka.guru/threads/5473192"
+                class="text-blue-600 text-sm"
+                >https://zelenka.guru/threads/5473192</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white hover:shadow-xl px-4 shadow-md border-t-2 border-gray-300 py-4 rounded-md"
+          >
+            <div class="w-1/2">
+              <img src="../assets/images/sar.jpg" alt="" />
+            </div>
+            <div class="flex flex-col gap-y-1 mt-3">
+              <h1>Авторег ВК</h1>
+              <h1>Автоматическая регистрация Telegram аккаунтов</h1>
+              <h1><span class="text-gray-400">Service:</span> Vkontakte</h1>
+              <a href="https://clck.ru/36kVFR" class="text-blue-600 text-sm"
+                >https://clck.ru/36kVFR</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- buttons  -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-center my-6 text-white w-full gap-y-4 md:gap-x-12"
+      >
+        <button
+          class="bg-[#4169E1] hover:bg-[#5f7dd9] py-2 w-full md:w-1/2 text-center rounded-md cursor-pointer md:text-xl"
+        >
+          SMS received statistics
+        </button>
+        <button
+          class="bg-[#4169E1] hover:bg-[#5f7dd9] py-2 w-full md:w-1/2 text-center rounded-md cursor-pointer md:text-xl"
+        >
+          Number received statistics
+        </button>
+      </div>
+
+      <!-- details section  -->
+      <div class="w-full bg-gray-100 rounded-xl p-6">
+        <div>
+          <h1 class="font-semibold text-2xl">Get number</h1>
+          <div
+            class="md:w-1/2 flex items-center justify-between gap-x-4 mt-6 flex-col"
+          >
+            <div class="w-full flex items-center gap-x-2 md:gap-x-8">
+              <button
+                class="py-3 text-base sm:text-xl rounded-md hover:shadow-xl hover:scale-x-105 duration-300 shadow-md w-1/2 flex justify-center bg-white"
+              >
+                WholeSale prices
+              </button>
+              <button
+                class="py-3 text-base sm:text-xl rounded-md hover:shadow-xl hover:scale-x-105 duration-300 shadow-md w-1/2 flex justify-center"
+              >
+                Retail prices
+              </button>
+            </div>
+            <div class="mt-5">
+              This section is more suitable for getting acquainted with prices
+              and statistics of receiving sms. It is possible to manually get a
+              number or text here, but quite difficult. This is due to the fact
+              that a lot of users use our partners' software to get a number. If
+              you need a large number of numbers - we advise you to use the API.
+            </div>
+          </div>
+
+          <!-- services and card  -->
+          <div class="w-full flex mt-12 flex-col">
+            <div
+              class="w-full flex flex-col gap-y-4 md:flex-row items-center gap-x-8"
+            >
+              <div class="w-full flex flex-col gap-y-2">
+                <label class="font-semibold">Services</label>
+                <select
+                  class="py-3 px-6 outline-none text-xl rounded-md hover:shadow-xl duration-300 shadow-md w-full flex justify-center bg-white"
+                >
+                  <option value="">Whatsapp</option>
+                  <option value="">telegram</option>
+                </select>
+              </div>
+              <div class="w-full flex flex-col gap-y-2">
+                <label class="font-semibold">Search Countries</label>
+                <input
+                  placeholder="search countries"
+                  class="py-3 text-xl rounded-md hover:shadow-xl duration-300 shadow-md w-full flex justify-center outline-none px-4"
+                />
+              </div>
+            </div>
+
+            <!-- products  -->
+
+            <div class="grid md:grid-cols-2 pt-12 gap-4 lg:gap-8">
+              <!-- single product  -->
+              <div class="bg-white px-4 py-6 rounded-md shadow-md">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-x-2 md:gap-x-4">
+                    <img
+                      src=".././assets/images/flag.png"
+                      class="md:h-[40px] w-[50px] md:w-[60px]"
+                      alt=""
+                    />
+                    <div class="leading-5 text-sm md:text-base">
+                      <h1>Ukraine</h1>
+                      <p>Count: 11</p>
+                    </div>
+                  </div>
+                  <div
+                    class="border-2 p-2 lg:p-4 flex items-center gap-x-2 rounded-md text-xs lg:text-base text-center"
+                  >
+                    <input type="checkbox" name="" id="" class="" />
+                    <p>Max price + Api</p>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between mt-6">
+                  <div class="flex items-center gap-x-4">
+                    <div class="border bg-gray-100 flex items-center">
+                      <i class="fa-solid fa-minus py-1 px-2 cursor-pointer"></i>
+                      <p class="px-4 bg-white py-1">$29.3</p>
+                      <i class="fa-solid fa-plus py-1 px-2 cursor-pointer"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="border-2 py-2 text-white px-4 cursor-pointer text-sm md:text-base lg:px-10 flex items-center rounded-md bg-[#4169E1]"
+                  >
+                    Buy number
+                  </div>
+                </div>
+              </div>
+              <!-- single product  -->
+              <div class="bg-white px-4 py-6 rounded-md shadow-md">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-x-2 md:gap-x-4">
+                    <img
+                      src=".././assets/images/flag.png"
+                      class="md:h-[40px] w-[50px] md:w-[60px]"
+                      alt=""
+                    />
+                    <div class="leading-5 text-sm md:text-base">
+                      <h1>Ukraine</h1>
+                      <p>Count: 11</p>
+                    </div>
+                  </div>
+                  <div
+                    class="border-2 p-2 lg:p-4 flex items-center gap-x-2 rounded-md text-xs lg:text-base text-center"
+                  >
+                    <input type="checkbox" name="" id="" class="" />
+                    <p>Max price + Api</p>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between mt-6">
+                  <div class="flex items-center gap-x-4">
+                    <div class="border bg-gray-100 flex items-center">
+                      <i class="fa-solid fa-minus py-1 px-2 cursor-pointer"></i>
+                      <p class="px-4 bg-white py-1">$29.3</p>
+                      <i class="fa-solid fa-plus py-1 px-2 cursor-pointer"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="border-2 py-2 text-white px-4 cursor-pointer text-sm md:text-base lg:px-10 flex items-center rounded-md bg-[#4169E1]"
+                  >
+                    Buy number
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="flex justify-center items-center py-6 bg-gray-100 text-sm md:text-base"
+    >
+      <p>© 2024 smslive.pro. All rights reserved. Agreement.</p>
+    </footer>
+  </body>
+</html>

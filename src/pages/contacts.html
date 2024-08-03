@@ -230,165 +230,179 @@
     </header>
 
     <!-- main home page  -->
-    <main class="px-[5%] mb-12 mt-28 md:my-12">
-      <div
-        class="w-full bg-gray-100 rounded-xl px-6 py-8 flex flex-col gap-y-2"
-      >
-        <h1 class="text-xl font-semibold">
-          Telegram:
-          <a href="#" class="text-blue-600 text-sm">@SMSLivePRO_Bot</a>
-        </h1>
-        <h1 class="text-xl font-semibold">
-          Email:
-          <a href="#" class="text-blue-600 text-sm">support@smslive.pro</a>
-        </h1>
-      </div>
-
-      <!-- buttons  -->
-      <div
-        class="flex flex-col md:flex-row justify-between items-center my-6 text-white w-full gap-y-4 md:gap-x-12"
-      >
-        <button
-          class="bg-[#4169E1] hover:bg-[#5f7dd9] py-2 w-full md:w-1/2 text-center rounded-md cursor-pointer md:text-xl"
+    <main
+      class="px-[5%] pb-12 pt-28 md:py-12 flex flex-col md:flex-row gap-y-6 gap-x-12 bg-gray-100"
+    >
+      <div class="w-full md:w-[40vw]">
+        <!-- buttons  -->
+        <div
+          class="flex flex-col justify-between mb-6 text-white w-full gap-y-4 md:gap-x-12"
         >
-          SMS received statistics
-        </button>
-        <button
-          class="bg-[#4169E1] hover:bg-[#5f7dd9] py-2 w-full md:w-1/2 text-center rounded-md cursor-pointer md:text-xl"
-        >
-          Number received statistics
-        </button>
-      </div>
-
-      <!-- details section  -->
-      <div class="w-full bg-gray-100 rounded-xl p-6">
-        <div>
-          <h1 class="font-semibold text-2xl">Get number</h1>
-          <div
-            class="md:w-1/2 flex items-center justify-between gap-x-4 mt-6 flex-col"
+          <button
+            class="bg-[#4169E1] hover:bg-[#5f7dd9] py-2 w-full rounded-md cursor-pointer text-start px-6"
           >
-            <div class="w-full flex items-center gap-x-2 md:gap-x-8">
-              <button
-                class="py-3 text-base sm:text-xl rounded-md hover:shadow-xl hover:scale-x-105 duration-300 shadow-md w-1/2 flex justify-center bg-white"
-              >
-                WholeSale prices
-              </button>
-              <button
-                class="py-3 text-base sm:text-xl rounded-md hover:shadow-xl hover:scale-x-105 duration-300 shadow-md w-1/2 flex justify-center"
-              >
-                Retail prices
-              </button>
-            </div>
-            <div class="mt-5">
-              This section is more suitable for getting acquainted with prices
-              and statistics of receiving sms. It is possible to manually get a
-              number or text here, but quite difficult. This is due to the fact
-              that a lot of users use our partners' software to get a number. If
-              you need a large number of numbers - we advise you to use the API.
-            </div>
-          </div>
+            SMS received statistics
+          </button>
+          <button
+            class="bg-[#4169E1] hover:bg-[#5f7dd9] py-2 w-full rounded-md cursor-pointer text-start px-6"
+          >
+            Number received statistics
+          </button>
+        </div>
 
-          <!-- services and card  -->
-          <div class="w-full flex mt-12 flex-col">
+        <!-- details section  -->
+        <div
+          class="w-full bg-white border shadow-sm rounded-xl overflow-hidden"
+        >
+          <div>
+            <h1 class="py-2 text-gray-500 bg-gray-100 w-full px-6">
+              Get number
+            </h1>
             <div
-              class="w-full flex flex-col gap-y-4 md:flex-row items-center gap-x-8"
+              class="flex items-center justify-between gap-x-4 mt-6 flex-col p-6"
             >
-              <div class="w-full flex flex-col gap-y-2">
-                <label class="font-semibold">Services</label>
-                <select
-                  class="py-3 px-6 outline-none text-xl rounded-md hover:shadow-xl duration-300 shadow-md w-full flex justify-center bg-white"
+              <div class="w-full flex items-center gap-x-2">
+                <button
+                  class="py-3 text-base rounded-md hover:shadow-xl hover:scale-x-105 duration-300 shadow-md w-1/2 flex justify-center bg-white"
                 >
-                  <option value="">Whatsapp</option>
-                  <option value="">telegram</option>
-                </select>
+                  WholeSale prices
+                </button>
+                <button
+                  class="py-3 text-base sm:text-xl rounded-md hover:shadow-xl hover:scale-x-105 duration-300 shadow-md w-1/2 flex justify-center"
+                >
+                  Retail prices
+                </button>
               </div>
-              <div class="w-full flex flex-col gap-y-2">
-                <label class="font-semibold">Search Countries</label>
-                <input
-                  placeholder="search countries"
-                  class="py-3 text-xl rounded-md hover:shadow-xl duration-300 shadow-md w-full flex justify-center outline-none px-4"
-                />
+              <div class="mt-5 bg-gray-100 p-4">
+                This section is more suitable for getting acquainted with prices
+                and statistics of receiving sms. It is possible to manually get
+                a number or text here, but quite difficult. This is due to the
+                fact that a lot of users use our partners' software to get a
+                number. If you need a large number of numbers - we advise you to
+                use the API.
               </div>
             </div>
 
-            <!-- products  -->
-
-            <div class="grid md:grid-cols-2 pt-12 gap-4 lg:gap-8">
-              <!-- single product  -->
-              <div class="bg-white px-4 py-6 rounded-md shadow-md">
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-x-2 md:gap-x-4">
-                    <img
-                      src=".././assets/images/flag.png"
-                      class="md:h-[40px] w-[50px] md:w-[60px]"
-                      alt=""
-                    />
-                    <div class="leading-5 text-sm md:text-base">
-                      <h1>Ukraine</h1>
-                      <p>Count: 11</p>
-                    </div>
-                  </div>
-                  <div
-                    class="border-2 p-2 lg:p-4 flex items-center gap-x-2 rounded-md text-xs lg:text-base text-center"
+            <!-- services and card  -->
+            <div class="w-full flex mt-12 flex-col p-6">
+              <div class="w-full flex flex-col gap-y-4 items-center gap-x-8">
+                <div class="w-full flex flex-col text-gray-600">
+                  <label class="text-gray-600">Services</label>
+                  <select
+                    class="py-3 px-4 outline-none border-t mt-1rounded-md hover:shadow-xl duration-300 shadow-md w-full flex justify-center bg-white"
                   >
-                    <input type="checkbox" name="" id="" class="" />
-                    <p>Max price + Api</p>
-                  </div>
+                    <option value="">Whatsapp</option>
+                    <option value="">telegram</option>
+                  </select>
                 </div>
-                <div class="flex items-center justify-between mt-6">
-                  <div class="flex items-center gap-x-4">
-                    <div class="border bg-gray-100 flex items-center">
-                      <i class="fa-solid fa-minus py-1 px-2 cursor-pointer"></i>
-                      <p class="px-4 bg-white py-1">$29.3</p>
-                      <i class="fa-solid fa-plus py-1 px-2 cursor-pointer"></i>
-                    </div>
-                  </div>
-                  <div
-                    class="border-2 py-2 text-white px-4 cursor-pointer text-sm md:text-base lg:px-10 flex items-center rounded-md bg-[#4169E1]"
-                  >
-                    Buy number
-                  </div>
+                <div class="w-full flex flex-col text-gray-600">
+                  <label class="">Search Countries</label>
+                  <input
+                    placeholder="search countries"
+                    class="py-3 border-t mt-1 rounded-md hover:shadow-xl duration-300 shadow-md w-full flex justify-center outline-none px-4"
+                  />
                 </div>
               </div>
-              <!-- single product  -->
-              <div class="bg-white px-4 py-6 rounded-md shadow-md">
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-x-2 md:gap-x-4">
-                    <img
-                      src=".././assets/images/flag.png"
-                      class="md:h-[40px] w-[50px] md:w-[60px]"
-                      alt=""
-                    />
-                    <div class="leading-5 text-sm md:text-base">
-                      <h1>Ukraine</h1>
-                      <p>Count: 11</p>
+
+              <!-- products  -->
+
+              <div class="mt-6 flex flex-col gap-y-6">
+                <!-- single product  -->
+                <div class="bg-white px-4 py-6 rounded-md shadow-md">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-x-2 md:gap-x-4">
+                      <img
+                        src="../assets/images/flag.png"
+                        class="md:h-[40px] w-[50px] md:w-[60px]"
+                        alt=""
+                      />
+                      <div class="leading-5 text-sm md:text-base">
+                        <h1>Ukraine</h1>
+                        <p>Count: 11</p>
+                      </div>
+                    </div>
+                    <div
+                      class="border-2 p-2 lg:p-4 flex items-center gap-x-2 rounded-md text-xs lg:text-base text-center"
+                    >
+                      <input type="checkbox" name="" id="" class="" />
+                      <p>Max price + Api</p>
                     </div>
                   </div>
-                  <div
-                    class="border-2 p-2 lg:p-4 flex items-center gap-x-2 rounded-md text-xs lg:text-base text-center"
-                  >
-                    <input type="checkbox" name="" id="" class="" />
-                    <p>Max price + Api</p>
+                  <div class="flex items-center justify-between mt-6">
+                    <div class="flex items-center gap-x-4">
+                      <div class="border bg-gray-100 flex items-center">
+                        <i
+                          class="fa-solid fa-minus py-1 px-2 cursor-pointer"
+                        ></i>
+                        <p class="px-4 bg-white py-1">$29.3</p>
+                        <i
+                          class="fa-solid fa-plus py-1 px-2 cursor-pointer"
+                        ></i>
+                      </div>
+                    </div>
+                    <div
+                      class="border-2 py-2 text-white px-4 cursor-pointer text-sm md:text-base lg:px-10 flex items-center rounded-md bg-[#4169E1]"
+                    >
+                      Buy number
+                    </div>
                   </div>
                 </div>
-                <div class="flex items-center justify-between mt-6">
-                  <div class="flex items-center gap-x-4">
-                    <div class="border bg-gray-100 flex items-center">
-                      <i class="fa-solid fa-minus py-1 px-2 cursor-pointer"></i>
-                      <p class="px-4 bg-white py-1">$29.3</p>
-                      <i class="fa-solid fa-plus py-1 px-2 cursor-pointer"></i>
+                <!-- single product  -->
+                <div class="bg-white px-4 py-6 rounded-md shadow-md">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-x-2 md:gap-x-4">
+                      <img
+                        src="../assets/images/flag.png"
+                        class="md:h-[40px] w-[50px] md:w-[60px]"
+                        alt=""
+                      />
+                      <div class="leading-5 text-sm md:text-base">
+                        <h1>Ukraine</h1>
+                        <p>Count: 11</p>
+                      </div>
+                    </div>
+                    <div
+                      class="border-2 p-2 lg:p-4 flex items-center gap-x-2 rounded-md text-xs lg:text-base text-center"
+                    >
+                      <input type="checkbox" name="" id="" class="" />
+                      <p>Max price + Api</p>
                     </div>
                   </div>
-                  <div
-                    class="border-2 py-2 text-white px-4 cursor-pointer text-sm md:text-base lg:px-10 flex items-center rounded-md bg-[#4169E1]"
-                  >
-                    Buy number
+                  <div class="flex items-center justify-between mt-6">
+                    <div class="flex items-center gap-x-4">
+                      <div class="border bg-gray-100 flex items-center">
+                        <i
+                          class="fa-solid fa-minus py-1 px-2 cursor-pointer"
+                        ></i>
+                        <p class="px-4 bg-white py-1">$29.3</p>
+                        <i
+                          class="fa-solid fa-plus py-1 px-2 cursor-pointer"
+                        ></i>
+                      </div>
+                    </div>
+                    <div
+                      class="border-2 py-2 text-white px-4 cursor-pointer text-sm md:text-base lg:px-10 flex items-center rounded-md bg-[#4169E1]"
+                    >
+                      Buy number
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div
+        class="w-full md:w-[60vw] bg-white h-fit rounded-xl px-6 py-3 flex flex-col gap-y-2 border shadow-md"
+      >
+        <h1 class="text-sm pr-1">
+          Telegram:
+          <a href="#" class="text-blue-600 text-sm">@SMSLivePRO_Bot</a>
+        </h1>
+        <h1 class="text-sm pr-1">
+          Email:
+          <a href="#" class="text-blue-600 text-sm">support@smslive.pro</a>
+        </h1>
       </div>
     </main>
 

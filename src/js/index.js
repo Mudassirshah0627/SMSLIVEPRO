@@ -14,10 +14,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const english = document.querySelector(".english");
   const englishMenu = document.querySelector(".english-menu");
 
+  const profile = document.querySelector(".profile");
+  const profileMenu = document.querySelector(".profile-menu");
+
   const humburgerIcons = document.querySelector(".humburger-icons");
   const humburger = document.querySelector(".humburger");
+
   const close = document.querySelector(".close");
   const navbar = document.querySelector(".navbar-menu");
+
+  const popup = document.querySelector(".popup");
+  const closePopup = document.querySelector(".closePopup");
+  const isOpenPopup = document.querySelector(".balanceTransfer");
 
   manual.addEventListener("click", () => {
     manualMenu.classList.toggle("hidden");
@@ -37,6 +45,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   english.addEventListener("click", () => {
     englishMenu.classList.toggle("hidden");
+  });
+
+  profile.addEventListener("click", () => {
+    profileMenu.classList.toggle("hidden");
+  });
+
+  popup.addEventListener("click", () => {
+    isOpenPopup.classList.toggle("hidden");
+  });
+
+  closePopup.addEventListener("click", () => {
+    isOpenPopup.classList.toggle("hidden");
   });
 
   humburgerIcons.addEventListener("click", () => {

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- output css  -->
+    <link href="../style/output.css" rel="stylesheet" />
+
+    <!-- icons links  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- tailwindcss cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- external js -->
+    <script src=".././js/index.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>how to use api</title>
+  </head>
+  <body>
+    <!-- header  -->
+    <header
+      class="border-b border-gray-200 md:py-2 flex flex-col md:flex-row items-center justify-between w-full text-gray-500 text-sm"
+    >
+      <div class="md:hidden absolute top-4 left-4">
+        <img src=".././assets/images/logo.png" alt="logo" />
+      </div>
+      <nav
+        class="absolute md:relative navbar-menu px-4 lg:px-[5%] transition-all ease-in divide-blue-400 md:flex items-center justify-between flex-col md:flex-row gap-y-4 w-full bg-gray-200 md:bg-transparent -translate-x-[100%] md:translate-x-0 py-5 md:py-0"
+      >
+        <div class="">
+          <img src=".././assets/images/logo.png" alt="logo" />
+        </div>
+        <div
+          class="flex flex-col md:flex-row md:items-center gap-x-2 lg:gap-x-12"
+        >
+          <div class="">
+            <ul
+              class="flex flex-col md:flex-row md:items-center gap-x-2 gap-y-5 xl:gap-x-8 text-xl md:text-base mt-6 md:mt-0"
+            >
+              <a href="../../index.html">Home</a>
+              <a href="../pages/emails.html">Email's</a>
+
+              <!-- for mobile menu  -->
+              <div class="md:hidden flex flex-col gap-y-4">
+                <a href="../pages/blog.html">Blog</a>
+                <a href="../pages/getNumber.html">How to get number</a>
+                <a href="../pages/deposit.html">How to deposit</a>
+                <a href="../pages/useApi.html">How to use API</a>
+                <a href="../pages/contacts.html">Contacts</a>
+                <a href="../pages/referrers.html">Referrers</a>
+                <a href="../pages/developers.html">Developers</a>
+                <a href="../pages/soft.html">Soft</a>
+                <a href="../pages/partners.html">Partners</a>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black manual">
+                  Manuals
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px]"
+                    alt=""
+                  />
+                </div>
+                <div class="manual-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/blog.html"
+                      >Blog</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/getNumber.html"
+                      >How to get number</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/deposit.html"
+                      >How to deposit</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/useApi.html"
+                      >How to use API</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black feedback">
+                  FeedBack
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="feedback-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/news.html"
+                      >News</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/contacts.html"
+                      >Contacts</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black earnings">
+                  Earnings
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="earnings-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/referrers.html"
+                      >Referrers</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/developers.html"
+                      >Developers</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black partners">
+                  Partners
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="partners-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/soft.html"
+                      >Soft</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/partners.html"
+                      >Partners</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black english">
+                  Languages
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="english-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/english.html"
+                      >English</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/pyccknn.html"
+                      >Pyccknn</a
+                    >
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="cursor-pointer flex items-center lg:gap-x-2 mt-6 md:mt-0 text-xl md:text-sm lg:text-base"
+        >
+          <a
+            href="../pages/auth/register.html"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >Register</a
+          >
+          <a
+            href="../pages/auth/login.html"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >Login</a
+          >
+        </div>
+      </nav>
+      <div class="absolute top-5 right-6 md:hidden humburger-icons">
+        <i class="fa-solid fa-bars text-2xl cursor-pointer humburger"></i>
+        <i class="fa-solid fa-xmark text-2xl cursor-pointer close hidden"></i>
+      </div>
+    </header>
+
+    <!-- main home page  -->
+    <main
+      class="px-[5%] pb-12 pt-28 lg:py-12 flex flex-col lg:flex-row gap-y-6 gap-x-12 bg-gray-100"
+    >
+      <div class="w-full lg:w-[40vw]">
+        <!-- buttons  -->
+        <div
+          class="flex flex-col justify-between mb-6 text-white w-full gap-y-4 md:gap-x-12"
+        >
+          <button
+            class="bg-[#4169E1] hover:bg-[#5f7dd9] py-2 w-full rounded-md cursor-pointer text-start px-6"
+          >
+            SMS received statistics
+          </button>
+          <button
+            class="bg-[#4169E1] hover:bg-[#5f7dd9] py-2 w-full rounded-md cursor-pointer text-start px-6"
+          >
+            Number received statistics
+          </button>
+        </div>
+
+        <!-- details section  -->
+        <div
+          class="w-full bg-white border shadow-sm rounded-xl overflow-hidden"
+        >
+          <div>
+            <h1 class="py-2 text-gray-500 bg-gray-100 w-full px-6">
+              Get number
+            </h1>
+            <div
+              class="flex items-center justify-between gap-x-4 mt-6 flex-col p-6"
+            >
+              <div class="w-full flex items-center gap-x-2">
+                <button
+                  class="py-3 text-base rounded-md hover:shadow-xl hover:scale-x-105 duration-300 shadow-md w-1/2 flex justify-center bg-white"
+                >
+                  WholeSale prices
+                </button>
+                <button
+                  class="py-3 text-base sm:text-xl rounded-md hover:shadow-xl hover:scale-x-105 duration-300 shadow-md w-1/2 flex justify-center"
+                >
+                  Retail prices
+                </button>
+              </div>
+              <div class="mt-5 bg-gray-100 p-4">
+                This section is more suitable for getting acquainted with prices
+                and statistics of receiving sms. It is possible to manually get
+                a number or text here, but quite difficult. This is due to the
+                fact that a lot of users use our partners' software to get a
+                number. If you need a large number of numbers - we advise you to
+                use the API.
+              </div>
+            </div>
+
+            <!-- services and card  -->
+            <div class="w-full flex mt-12 flex-col p-6">
+              <div class="w-full flex flex-col gap-y-4 items-center gap-x-8">
+                <div class="w-full flex flex-col text-gray-600">
+                  <label class="text-gray-600">Services</label>
+                  <select
+                    class="py-3 px-4 outline-none border-t mt-1rounded-md hover:shadow-xl duration-300 shadow-md w-full flex justify-center bg-white"
+                  >
+                    <option value="">Whatsapp</option>
+                    <option value="">telegram</option>
+                  </select>
+                </div>
+                <div class="w-full flex flex-col text-gray-600">
+                  <label class="">Search Countries</label>
+                  <input
+                    placeholder="search countries"
+                    class="py-3 border-t mt-1 rounded-md hover:shadow-xl duration-300 shadow-md w-full flex justify-center outline-none px-4"
+                  />
+                </div>
+              </div>
+
+              <!-- products  -->
+
+              <div class="mt-6 flex flex-col gap-y-6">
+                <!-- single product  -->
+                <div class="bg-white px-4 py-6 rounded-md shadow-md">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-x-2 md:gap-x-4">
+                      <img
+                        src="../assets/images/flag.png"
+                        class="md:h-[40px] w-[50px] md:w-[60px]"
+                        alt=""
+                      />
+                      <div class="leading-5 text-sm md:text-base">
+                        <h1>Ukraine</h1>
+                        <p>Count: 11</p>
+                      </div>
+                    </div>
+                    <div
+                      class="border-2 p-2 lg:p-4 flex items-center gap-x-2 rounded-md text-xs lg:text-base text-center"
+                    >
+                      <input type="checkbox" name="" id="" class="" />
+                      <p>Max price + Api</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between mt-6">
+                    <div class="flex items-center gap-x-4">
+                      <div class="border bg-gray-100 flex items-center">
+                        <i
+                          class="fa-solid fa-minus py-1 px-2 cursor-pointer"
+                        ></i>
+                        <p class="px-4 bg-white py-1">$29.3</p>
+                        <i
+                          class="fa-solid fa-plus py-1 px-2 cursor-pointer"
+                        ></i>
+                      </div>
+                    </div>
+                    <div
+                      class="border-2 py-2 text-white px-4 cursor-pointer text-sm md:text-base lg:px-10 flex items-center rounded-md bg-[#4169E1]"
+                    >
+                      Buy number
+                    </div>
+                  </div>
+                </div>
+                <!-- single product  -->
+                <div class="bg-white px-4 py-6 rounded-md shadow-md">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-x-2 md:gap-x-4">
+                      <img
+                        src="../assets/images/flag.png"
+                        class="md:h-[40px] w-[50px] md:w-[60px]"
+                        alt=""
+                      />
+                      <div class="leading-5 text-sm md:text-base">
+                        <h1>Ukraine</h1>
+                        <p>Count: 11</p>
+                      </div>
+                    </div>
+                    <div
+                      class="border-2 p-2 lg:p-4 flex items-center gap-x-2 rounded-md text-xs lg:text-base text-center"
+                    >
+                      <input type="checkbox" name="" id="" class="" />
+                      <p>Max price + Api</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between mt-6">
+                    <div class="flex items-center gap-x-4">
+                      <div class="border bg-gray-100 flex items-center">
+                        <i
+                          class="fa-solid fa-minus py-1 px-2 cursor-pointer"
+                        ></i>
+                        <p class="px-4 bg-white py-1">$29.3</p>
+                        <i
+                          class="fa-solid fa-plus py-1 px-2 cursor-pointer"
+                        ></i>
+                      </div>
+                    </div>
+                    <div
+                      class="border-2 py-2 text-white px-4 cursor-pointer text-sm md:text-base lg:px-10 flex items-center rounded-md bg-[#4169E1]"
+                    >
+                      Buy number
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full lg:w-[60vw] rounded-xl px-6 py-4 flex flex-col gap-y-6 bg-white border-2"
+      >
+        <div class="text-gray-700 text-[15px]">
+          <h1 class="text-lg font-medium">Using API SMSLIVE.PRO</h1>
+          <p class="py-4">
+            Our API is fully compatible with similar sites. <br />
+            URL for API requests: https://smslive.pro/stubs/handler_api.php
+            <br />
+            Allow POST and GET requests. <br />
+            Requests must have an API key as the api_key parameter. <br />
+          </p>
+          <h1 class="py-2">Your API key</h1>
+          <p class="py-2 rounded-xl break-words border px-4">
+            oNYwkid6zlGVK4pIz6ytj7CXOie1yvX5FslggxPB
+          </p>
+          <div>
+            <h1 class="text-lg font-medium pt-6 pb-2">
+              Count of available phone numbers
+            </h1>
+            <p class="py-2 rounded-xl break-words border px-4">
+              https://smslive.pro/stubs/handler_api.php?api_key=$api_key&action=getNumbersStatus&country=$country
+            </p>
+            <h1 class="text-lg font-medium pt-6">Parameters:</h1>
+
+            <p>
+              $api_key - Your API key <br />
+              $country * - Country <br />
+              * - optional
+            </p>
+            <h1 class="text-lg font-medium pt-6">Response:</h1>
+
+            <p>
+              {"wa":"44","vk":"32","tg":"400","ig":"2","ya":"100","tw":"999","mt":"32"}
+            </p>
+            <h1 class="text-lg font-medium pt-6">Errors:</h1>
+            <p>
+              BAD_KEY - invalid API key <br />
+              BAD_ACTION - incorrect action
+            </p>
+          </div>
+          <!-- {/*get balance */} -->
+          <div>
+            <h1 class="text-lg font-medium pt-6 pb-2">Get balance</h1>
+            <p class="py-2 rounded-xl break-words border px-4">
+              https://smslive.pro/stubs/handler_api.php?api_key=$api_key&action=getBalance
+            </p>
+            <h1 class="text-lg font-medium pt-6">Parameters:</h1>
+
+            <p>
+              $api_key - Your API <br />
+              key $country * - Country <br />
+              * - optional
+            </p>
+            <h1 class="text-lg font-medium pt-6">Response:</h1>
+
+            <p>
+              {"wa":"44","vk":"32","tg":"400","ig":"2","ya":"100","tw":"999","mt":"32"}
+            </p>
+            <h1 class="text-lg font-medium pt-6">Errors:</h1>
+            <p>
+              BAD_KEY - invalid API key <br />
+              BAD_ACTION - incorrect action
+            </p>
+          </div>
+          <!-- get number  -->
+          <div>
+            <h1 class="text-lg font-medium pt-6 pb-2">Get number</h1>
+            <p class="py-2 rounded-xl break-words border px-4">
+              https://smslive.pro/stubs/handler_api.php?api_key=$axPrice=$maxPrice
+            </p>
+            <h1 class="text-lg font-medium pt-6">Parameters:</h1>
+
+            <p>
+              $api_key - Your API key <br />
+              $service - Service code <br />
+              $country * - Country code <br />
+              $operators * - Operators, not more than 5 pcs. <br />
+              $exceptOperators * - Excluded operators, not more than 5 pcs.
+              <br />
+              $ref * - account ID, account type should be «Developer». details
+              <br />
+              $maxPrice * - the maximum price for which you are willing to buy
+              the number. how to use <br />
+              If maxPrice parameter is specified, then MaxPrice + API from the
+              cabinet is ignored, for MaxPrice + API country is required! <br />
+              * - optional
+            </p>
+            <h1 class="text-lg font-medium pt-6">Response:</h1>
+
+            <p>ACCESS_NUMBER:$activationId:$phoneNumber</p>
+            <h1 class="text-lg font-medium pt-6">Errors:</h1>
+            <p>
+              BAD_KEY - invalid API key <br />
+              BAD_ACTION - incorrect action <br />
+              BANNED - temporary ban <br />
+              BAD_SERVICE - incorrect service code <br />
+              BAD_COUNTRY - incorrect country code <br />
+              BAD_MAX_PRICE - incorrect maximum price <br />
+              BAD_OPERATORS - operator not found <br />
+              TOO_MANY_OPERATORS - number of operators exceeds 5 pcs. <br />
+              BAD_EXCEPT_OPERATORS - excluded operator not found <br />
+              TOO_MANY_EXCEPT_OPERATORS - number of excluded operators exceeds 5
+              pcs. <br />
+              NO_BALANCE - no money on balance <br />
+              NO_CONNECTION - no connection to service <br />
+              NO_NUMBERS - no available numbers <br />
+            </p>
+          </div>
+
+          <!-- Get number V2  -->
+          <div>
+            <h1 class="text-lg font-medium pt-6 pb-2">Get number V2</h1>
+            <p class="py-2 rounded-xl break-words border px-4 text-wrap w-full">
+              https://smslive.pro/stubs/handler_api.php?api_
+            </p>
+            <h1 class="text-lg font-medium pt-6">Response:</h1>
+
+            <p>
+              {
+              <br />
+              "activationId": $activationId, "phoneNumber": $phoneNumber,
+              "activationCost": "5.5", "countryCode": "0", "activationTime":
+              "2023-11-11 18:30:20",
+              <br />
+              }
+            </p>
+          </div>
+
+          <!-- Active Status  -->
+          <div>
+            <h1 class="text-lg font-medium pt-6 pb-2">Activation status</h1>
+            <p class="py-2 rounded-xl break-words border px-4">
+              https://smslive.pro/stubs/handler_api.php?api_key=$api_key&action=getStatus&id=$id
+            </p>
+
+            <h1 class="text-lg font-medium pt-6">Parameters:</h1>
+
+            <p>
+              $api_key - Your API key <br />
+              $id - Activation ID received in getNumber or getNumberV2
+            </p>
+            <h1 class="text-lg font-medium pt-6">Response:</h1>
+
+            <p>
+              STATUS_OK:'text code'<br />
+              STATUS_WAIT_CODE - wait code
+            </p>
+            <h1 class="text-lg font-medium pt-6">Errors:</h1>
+            <p>
+              BAD_KEY - invalid API key <br />
+              BAD_ACTION - incorrect action <br />
+              NO_ACTIVATION - The activation ID does not exist
+            </p>
+          </div>
+
+          <!--  Change activation status  -->
+          <div>
+            <h1 class="text-lg font-medium pt-6 pb-2">
+              Change activation status
+            </h1>
+            <p class="py-2 rounded-xl break-words border px-4">
+              https://smslive.pro/stubs/handler_api.php?api_key=$api_key&action=setStatus&status=$status&id=$id
+            </p>
+
+            <h1 class="text-lg font-medium pt-6">Parameters:</h1>
+
+            <p>
+              $api_key - Your API key <br />
+              $id - Activation ID received in getNumber or getNumberV2 <br />
+              $status - Activation status
+            </p>
+            <p class="p-4 border w-full md:w-1/2 my-4">
+              1 number is ready (SMS sent to the number) <br />
+              3 request another code (free of charge) <br />
+              6 complete activation <br />
+              8 number has been used and cancel activation <br />
+            </p>
+            <p class="p-4 border w-full md:w-1/2 my-4 text-xs">
+              Logic of use API <br />
+              Get number using getNumber method <br />
+              the following actions are then available <br />
+              8 - Cancel activation (if the number doesn't work for you) <br />
+              1 - SMS has been sent (optional) <br />
+              <br />
+              For activation with status 1 <br />
+              8 - Cancel activation <br />
+              After receipt of the code: <br />
+              3 - Request another SMS <br />
+              6 - Confirm SMS code and complete activation <br />
+              <br />
+              For activation with status 3 <br />
+              6 - Confirm SMS code and complete activation
+            </p>
+
+            <h1 class="text-lg font-medium pt-6">Response:</h1>
+
+            <p>
+              ACCESS_READY - number is ready to receive the code <br />
+              ACCESS_ACTIVATION - service activated <br />
+              ACCESS_CANCEL - activation cancelled
+            </p>
+            <h1 class="text-lg font-medium pt-6">Errors:</h1>
+            <p>
+              BAD_KEY - invalid API key <br />
+              BAD_ACTION - incorrect action <br />
+              NO_ACTIVATION - The activation ID does not exist <br />
+              BAD_STATUS - incorrect status <br />
+              EARLY_CANCEL_DENIED - cannot be cancelled in the first 2 minutes
+              <br />
+            </p>
+          </div>
+
+          <!-- Get prices  -->
+          <div>
+            <h1 class="text-lg font-medium pt-6 pb-2">Get prices</h1>
+            <p class="py-2 rounded-xl break-words border px-4">
+              https://smslive.pro/stubs/handler_api.php?api_key=$api_key&action=getPrices
+            </p>
+
+            <h1 class="text-lg font-medium pt-6">Parameters:</h1>
+
+            <p>
+              $api_key - Your API key <br />
+              $priceMap * - (true | false - default) Full list of quantities and
+              prices <br />
+              * - optional
+            </p>
+            <h1 class="text-lg font-medium pt-6">Response:</h1>
+
+            <p>
+              {"Country code":{"Service code":{"cost":"1.00","count":"1166"}}
+              <br />
+              {"2":{"vk":{"cost":"1.00","count":"1166"}} <br />
+              If use priceMap: <br />
+              {"Country code":{"Service code":[{"cost":"1.00","count":"1166"},
+              {"cost":"2.00","count":"2190"}] <br />
+              {"2":{"vk":[{"cost":"1.00","count":"1166"},{"cost":"2.00","count":"2190"}]
+            </p>
+            <h1 class="text-lg font-medium pt-6">Errors:</h1>
+            <p>
+              BAD_KEY - invalid API key <br />
+              BAD_ACTION - incorrect action
+            </p>
+          </div>
+
+          <!-- Buy email  -->
+          <div>
+            <h1 class="text-lg font-medium pt-6 pb-2">Buy email</h1>
+            <p class="py-2 rounded-xl break-words border px-4">
+              https://smslive.pro/stubs/handler_api.php?api_key=$api_key&action=getStatus&id=$id
+            </p>
+
+            <h1 class="text-lg font-medium pt-6">Parameters:</h1>
+            <p>
+              $api_key - Your API key <br />
+              $service - Service code
+            </p>
+
+            <h1 class="text-lg font-medium pt-6">Response:</h1>
+            <p>
+              $api_key - Your API key <br />
+              $service - Service code <br />
+              <br />
+              Response: <br />
+              { <br />
+              "status": "OK", <br />
+              "activationId": $activationId, <br />
+              "email": $email, <br />
+              } <br />
+              OR <br />
+              { <br />
+              "status": "ERROR", <br />
+              "ERROR": "ERROR_TRY_AGAIN", <br />
+              }
+            </p>
+
+            <h1 class="text-lg font-medium pt-6">Errors:</h1>
+            <p>
+              BAD_KEY - invalid API key <br />
+              BAD_ACTION - incorrect action <br />
+              BAD_SERVICE - incorrect service code <br />
+              ERROR_TRY_AGAIN - No available email, try again
+            </p>
+          </div>
+
+          <!-- Check email  -->
+          <div>
+            <h1 class="text-lg font-medium pt-6 pb-2">Check email</h1>
+            <p class="py-2 rounded-xl break-words border px-4">
+              https://smslive.pro/stubs/handler_api.php?api_key=$api_key&action=checkMailActivation&id=$id
+            </p>
+
+            <h1 class="text-lg font-medium pt-6">Parameters:</h1>
+            <p>
+              $api_key - Your API key $id - Activation ID received in
+              buyMailActivation
+            </p>
+
+            <h1 class="text-lg font-medium pt-6">Response:</h1>
+            <p>
+              { <br />
+              "status": "OK", <br />
+              "code": "text code", <br />
+              } <br />
+              OR <br />
+              { <br />
+              "status": "ERROR", <br />
+              "ERROR": "FORBIDDEN", <br />
+              } <br />
+            </p>
+
+            <h1 class="text-lg font-medium pt-6">Errors:</h1>
+            <p>
+              BAD_KEY - invalid API key <br />
+              BAD_ACTION - incorrect action <br />
+              FORBIDDEN - The activation ID does not exist
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="flex justify-center items-center py-6 bg-gray-100 text-sm md:text-base"
+    >
+      <p>© 2024 smslive.pro. All rights reserved. Agreement.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- output css  -->
+    <link href="../style/output.css" rel="stylesheet" />
+
+    <!-- icons links  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- tailwindcss cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- external js -->
+    <script src=".././js/index.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Ref Transaction</title>
+  </head>
+  <body>
+    <!-- header  -->
+    <header
+      class="border-b border-gray-200 md:py-2 flex flex-col md:flex-row items-center justify-between w-full text-gray-500 text-sm"
+    >
+      <div class="md:hidden absolute top-4 left-4">
+        <img src=".././assets/images/logo.png" alt="logo" />
+      </div>
+      <nav
+        class="absolute md:relative navbar-menu px-4 lg:px-[5%] transition-all ease-in divide-blue-400 md:flex items-center justify-between flex-col md:flex-row gap-y-4 w-full bg-gray-200 md:bg-transparent -translate-x-[100%] md:translate-x-0 py-5 md:py-0"
+      >
+        <div class="">
+          <img src=".././assets/images/logo.png" alt="logo" />
+        </div>
+        <div
+          class="flex flex-col md:flex-row md:items-center gap-x-2 lg:gap-x-12"
+        >
+          <div class="">
+            <ul
+              class="flex flex-col md:flex-row md:items-center gap-x-2 gap-y-5 xl:gap-x-8 text-xl md:text-base mt-6 md:mt-0"
+            >
+              <a href="./activations.html">Activations</a>
+              <a href="../pages/emails.html">Email's</a>
+
+              <!-- for mobile menu  -->
+              <div class="md:hidden flex flex-col gap-y-4">
+                <a href="../pages/blog.html">Blog</a>
+                <a href="../pages/getNumber.html">How to get number</a>
+                <a href="../pages/deposit.html">How to deposit</a>
+                <a href="../pages/useApi.html">How to use API</a>
+                <a href="../pages/contacts.html">Contacts</a>
+                <a href="../pages/referrers.html">Referrers</a>
+                <a href="../pages/developers.html">Developers</a>
+                <a href="../pages/soft.html">Soft</a>
+                <a href="../pages/partners.html">Partners</a>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black manual">
+                  Manuals
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px]"
+                    alt=""
+                  />
+                </div>
+                <div class="manual-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer text-sm font-medium"
+                      href="../pages/blog.html"
+                      >Blog</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/getNumber.html"
+                      >How to get number</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/deposit.html"
+                      >How to deposit</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/useApi.html"
+                      >How to use API</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black feedback">
+                  FeedBack
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="feedback-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/news.html"
+                      >News</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/contacts.html"
+                      >Contacts</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black earnings">
+                  Earnings
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="earnings-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/referrers.html"
+                      >Referrers</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/developers.html"
+                      >Developers</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black partners">
+                  Partners
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="partners-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/soft.html"
+                      >Soft</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/partners.html"
+                      >Partners</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black english">
+                  Languages
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="english-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/english.html"
+                      >English</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/pyccknn.html"
+                      >Pyccknn</a
+                    >
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="cursor-pointer flex items-center lg:gap-x-2 mt-6 md:mt-0 text-xl md:text-sm lg:text-base"
+        >
+          <div class="bg-gray-100 py-1 px-2 border rounded-md border-gray-300">
+            82.49 ₽
+          </div>
+          <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+            <div class="flex gap-x-1 lg:gap-x-2 hover:text-black profile">
+              tempotp
+              <img
+                src=".././assets/icons/chevron-down-solid.svg"
+                class="w-[12px] h-"
+                alt=""
+              />
+            </div>
+            <div class="profile-menu absolute top-8 right-0 hidden">
+              <ul
+                class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+              >
+                <p class="text-sm text-gray-400 px-3 pt-3">Manage Account</p>
+                <a
+                  class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer text-sm font-medium"
+                  href="../pages/profile.html"
+                  >Profile</a
+                >
+                <a
+                  class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer text-sm font-medium"
+                  href="../pages/refBalance.html"
+                  >Ref. balance</a
+                >
+                <a
+                  class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer text-sm font-medium"
+                  href="../pages/replenish.html"
+                  >Replenish</a
+                >
+                <a
+                  class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer text-sm font-medium"
+                  href="../../index.html"
+                  >Log Out</a
+                >
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="absolute top-5 right-6 md:hidden humburger-icons">
+        <i class="fa-solid fa-bars text-2xl cursor-pointer humburger"></i>
+        <i class="fa-solid fa-xmark text-2xl cursor-pointer close hidden"></i>
+      </div>
+    </header>
+
+    <!-- main home page  -->
+    <main class="px-[15%] pb-12 pt-28 md:py-12 flex flex-col bg-gray-100">
+      <div
+        class="border-2 shadow-md w-full py-2 flex flex-col gap-y-2 bg-gray-100 sm:flex-row sm:items-center justify-between px-2 sm:px-6"
+      >
+        <div class="flex items-center">
+          <p class="text-gray-500">
+            Fond: <span class="text-gray-700">2627,</span>
+          </p>
+          <p class="text-gray-500">
+            amount: <span class="text-gray-700">28591.76 ₽</span>
+          </p>
+        </div>
+        <div class="flex gap-x-2 sm:gap-x-6 items-center">
+          <select
+            id="underline_select"
+            class="block py-2.5 px-4 text-sm text-gray-500 w-[160px] bg-transparent rounded-md cursor-pointer dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer bg-white border border-gray-300"
+          >
+            <option selected>Balance transfer</option>
+            <option value="News">Payments</option>
+          </select>
+          <div
+            class="bg-white popup py-2 px-4 rounded-md border border-gray-300 text-gray-600 cursor-pointer"
+          >
+            Transfer to balance
+          </div>
+        </div>
+      </div>
+
+      <div class="shadow-lg rounded-lg overflow-hidden mt-6 border-t-2">
+        <table class="w-full table-fixed">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="w-1/4 py-4 px-6 text-left text-gray-400 uppercase">
+                System
+              </th>
+              <th class="w-1/4 py-4 px-6 text-left text-gray-400 uppercase">
+                Wallet
+              </th>
+              <th class="w-1/4 py-4 px-6 text-left text-gray-400 uppercase">
+                Amount
+              </th>
+              <th class="w-1/4 py-4 px-6 text-left text-gray-400 uppercase">
+                Status
+              </th>
+              <th class="w-1/4 py-4 px-6 text-left text-gray-400 uppercase">
+                Created
+              </th>
+            </tr>
+          </thead>
+          <tbody class="bg-white">
+            <tr>
+              <td class="py-4 px-6 border-b border-gray-200">box</td>
+              <td class="py-4 px-6 border-b border-gray-200 truncate">On</td>
+              <td class="py-4 px-6 border-b border-gray-200">www.box.net</td>
+              <td class="py-4 px-6 border-b border-gray-200">
+                <span
+                  class="bg-green-500 text-white py-1 px-2 rounded-full text-xs"
+                  >Active</span
+                >
+              </td>
+              <td class="py-4 px-6 border-b border-gray-200">box</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 border-b border-gray-200">FR</td>
+              <td class="py-4 px-6 border-b border-gray-200 truncate">Off</td>
+              <td class="py-4 px-6 border-b border-gray-200">www.frr.com</td>
+              <td class="py-4 px-6 border-b border-gray-200">
+                <span
+                  class="bg-red-500 text-white py-1 px-2 rounded-full text-xs"
+                  >Inactive</span
+                >
+              </td>
+              <td class="py-4 px-6 border-b border-gray-200">box</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- popup  -->
+      <div class="absolute top-0 left-0 h-screen w-full hidden balanceTransfer">
+        <div class="flex justify-center">
+          <div
+            class="w-[40vw] bg-white border-2 border-gray-200 rounded-xl z-40 h-fit mt-12"
+          >
+            <h1 class="text-xl py-2 mb-4 px-4 border-b">Balance Transfer</h1>
+            <div class="flex flex-col gap-y-1 mt-2 my-6 px-4">
+              <label class="text-gray-700 text-base">Amount</label>
+              <input
+                type="text"
+                class="outline-none py-2 rounded-md shadow-md px-4 border-t w-full"
+              />
+            </div>
+            <div
+              class="w-full flex justify-end items-center py-4 bg-[#F9FAFB] px-6 gap-x-4"
+            >
+              <button class="closePopup">Close</button>
+              <button
+                class="py-2 px-4 rounded-md hover:bg-[#374151] bg-[#282f3a] text-white"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#BAC4D0] absolute top-0 left-0 h-screen w-full z-20 opacity-45"></div>
+      </div>
+    </main>
+
+    <footer
+      class="flex justify-center items-center py-6 bg-gray-100 text-sm md:text-base"
+    >
+      <p>© 2024 smslive.pro. All rights reserved. Agreement.</p>
+    </footer>
+  </body>
+</html>

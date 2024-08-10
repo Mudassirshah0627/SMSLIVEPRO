@@ -22,7 +22,7 @@
       rel="stylesheet"
     />
 
-    <title>Blogs</title>
+    <title>Activations</title>
   </head>
   <body>
     <!-- header  -->
@@ -45,7 +45,7 @@
             <ul
               class="flex flex-col md:flex-row md:items-center gap-x-2 gap-y-5 xl:gap-x-8 text-xl md:text-base mt-6 md:mt-0"
             >
-              <a href="../../index.html">Home</a>
+              <a href="./activations.html">Activations</a>
               <a href="../pages/emails.html">Email's</a>
 
               <!-- for mobile menu  -->
@@ -75,7 +75,7 @@
                     class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
                   >
                     <a
-                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer text-sm font-medium"
                       href="../pages/blog.html"
                       >Blog</a
                     >
@@ -211,16 +211,46 @@
         <div
           class="cursor-pointer flex items-center lg:gap-x-2 mt-6 md:mt-0 text-xl md:text-sm lg:text-base"
         >
-          <a
-            href="../pages/auth/register.html"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-            >Register</a
-          >
-          <a
-            href="../pages/auth/login.html"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-            >Login</a
-          >
+          <div class="bg-gray-100 py-1 px-2 border rounded-md border-gray-300">
+            82.49 ₽
+          </div>
+          <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+            <div class="flex gap-x-1 lg:gap-x-2 hover:text-black profile">
+              tempotp
+              <img
+                src=".././assets/icons/chevron-down-solid.svg"
+                class="w-[12px] h-"
+                alt=""
+              />
+            </div>
+            <div class="profile-menu absolute top-8 right-0 hidden">
+              <ul
+                class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+              >
+                <p class="text-sm text-gray-400 px-3 pt-3">Manage Account</p>
+                <a
+                  class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer text-sm font-medium"
+                  href="../pages/profile.html"
+                  >Profile</a
+                >
+                <a
+                  class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer text-sm font-medium"
+                  href="../pages/refBalance.html"
+                  >Ref. balance</a
+                >
+                <a
+                  class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer text-sm font-medium"
+                  href="../pages/replenish.html"
+                  >Replenish</a
+                >
+                <a
+                  class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer text-sm font-medium"
+                  href="../../index.html"
+                  >Log Out</a
+                >
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
       <div class="absolute top-5 right-6 md:hidden humburger-icons">
@@ -392,57 +422,136 @@
           </div>
         </div>
       </div>
-      <div
-        class="w-full md:w-[60vw] h-fit rounded-xl px-6 py-8 flex flex-col gap-y-6"
-      >
+      <div class="w-full md:w-[60vw] h-fit rounded-xl flex flex-col gap-y-6">
         <div
           class="border-2 shadow-md w-full py-2 flex flex-col gap-y-2 bg-gray-100 sm:flex-row sm:items-center justify-between px-2 sm:px-6"
         >
-          <div>Post:1</div>
+          <div class="flex items-center">
+            <p class="text-gray-500">
+              Fond: <span class="text-gray-700">2627,</span>
+            </p>
+            <p class="text-gray-500">
+              amount: <span class="text-gray-700">28591.76 ₽</span>
+            </p>
+          </div>
           <div class="flex gap-x-2 sm:gap-x-6 items-center">
             <select
               id="underline_select"
-              class="block py-2.5 px-4 text-sm text-gray-500 bg-transparent rounded-md cursor-pointer appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer bg-white border border-gray-300"
+              class="block py-2.5 px-4 text-sm text-gray-500 w-[160px] bg-transparent rounded-md cursor-pointer dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer bg-white border border-gray-300"
             >
-              <option selected>Categories</option>
-              <option value="News">News</option>
+              <option selected>Await</option>
+              <option value="News">Received</option>
             </select>
-            <div>
-              <input
-                type="text"
-                class="py-2 shadow-md px-4 outline-none rounded-md border border-gray-300 w-full"
-                placeholder="search"
-              />
-            </div>
           </div>
         </div>
 
-        <!-- blogs  -->
-        <div class="gap-y-6">
-          <div
-            class="py-6 flex-col w-full justify-between px-6 gap-4 border shadow-sm rounded-md bg-white"
-          >
-            <div class="w-full gap-6">
-              <img
-                src="../assets/images/whatsapp.jpg"
-                alt=""
-                class="w-full sm:w-1/2"
-              />
-              <div>
-                <p
-                  class="py-1 px-2 bg-gray-100 text-xs w-fit rounded-md mt-2 border border-gray-300"
-                >
-                  News
-                </p>
-                <h1 class="text-xl py-2">WhatsApp will stop working</h1>
+        <div class="bg-gray-100 rounded-md flex flex-col gap-6">
+          <div class="shadow-md border-2">
+            <div class="flex items-center gap-x-2 text-gray-600 pt-2 px-6">
+              <p>+917008085387</p>
+              <span class="p-[3px] rounded-full bg-gray-400"></span>
+              <span> 9.5 ₽</span>
+            </div>
+            <div class="flex items-center gap-x-2 mt-2 px-6 pb-2 border-b-2">
+              <div class="flex items-center gap-x-1">
+                <img src="../assets/images/indianflag.png" alt="" />
+                <p class="text-gray-600 text-sm">India</p>
+              </div>
+              <span class="p-[3px] rounded-full bg-gray-400"></span>
+              <div class="flex items-center gap-x-1">
+                <img src="../assets/images/irctc.png" alt="" />
+                <p class="text-gray-600 text-sm">IRCTC</p>
+              </div>
+              <span class="p-[3px] rounded-full bg-gray-400"></span>
+              <div class="flex items-center gap-x-1">
+                <img src="../assets/images/irctc.png" alt="" />
+                <p class="text-gray-600 text-sm">Operator 48</p>
               </div>
             </div>
-
-            <div class="w-full flex flex-col gap-y-3">
-              <p class="text-sm">
-                WhatsApp will stop working on 45 gadgets (list)
+            <div class="bg-white py-6 text-sm flex flex-col gap-y-3 px-6">
+              <p>Text code: 5685</p>
+              <p>
+                To receive SMS correctly, your IP must correspond to the country
+                of the number. <br />
+                Recommended
+                <a
+                  href="https://marsproxies.com/?r=03TJo29706ieRkW"
+                  class="text-black font-semibold"
+                  >proxy Marsproxies.com</a
+                >
               </p>
-              <p>28.06.2024</p>
+            </div>
+          </div>
+          <div class="shadow-md border-2">
+            <div class="flex items-center gap-x-2 text-gray-600 pt-2 px-6">
+              <p>+917008085387</p>
+              <span class="p-[3px] rounded-full bg-gray-400"></span>
+              <span> 9.5 ₽</span>
+            </div>
+            <div class="flex items-center gap-x-2 mt-2 px-6 pb-2 border-b-2">
+              <div class="flex items-center gap-x-1">
+                <img src="../assets/images/indianflag.png" alt="" />
+                <p class="text-gray-600 text-sm">India</p>
+              </div>
+              <span class="p-[3px] rounded-full bg-gray-400"></span>
+              <div class="flex items-center gap-x-1">
+                <img src="../assets/images/irctc.png" alt="" />
+                <p class="text-gray-600 text-sm">IRCTC</p>
+              </div>
+              <span class="p-[3px] rounded-full bg-gray-400"></span>
+              <div class="flex items-center gap-x-1">
+                <img src="../assets/images/irctc.png" alt="" />
+                <p class="text-gray-600 text-sm">Operator 48</p>
+              </div>
+            </div>
+            <div class="bg-white py-6 text-sm flex flex-col gap-y-3 px-6">
+              <p>Text code: 5685</p>
+              <p>
+                To receive SMS correctly, your IP must correspond to the country
+                of the number. <br />
+                Recommended
+                <a
+                  href="https://marsproxies.com/?r=03TJo29706ieRkW"
+                  class="text-black font-semibold"
+                  >proxy Marsproxies.com</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="shadow-md border-2">
+            <div class="flex items-center gap-x-2 text-gray-600 pt-2 px-6">
+              <p>+917008085387</p>
+              <span class="p-[3px] rounded-full bg-gray-400"></span>
+              <span> 9.5 ₽</span>
+            </div>
+            <div class="flex items-center gap-x-2 mt-2 px-6 pb-2 border-b-2">
+              <div class="flex items-center gap-x-1">
+                <img src="../assets/images/indianflag.png" alt="" />
+                <p class="text-gray-600 text-sm">India</p>
+              </div>
+              <span class="p-[3px] rounded-full bg-gray-400"></span>
+              <div class="flex items-center gap-x-1">
+                <img src="../assets/images/irctc.png" alt="" />
+                <p class="text-gray-600 text-sm">IRCTC</p>
+              </div>
+              <span class="p-[3px] rounded-full bg-gray-400"></span>
+              <div class="flex items-center gap-x-1">
+                <img src="../assets/images/irctc.png" alt="" />
+                <p class="text-gray-600 text-sm">Operator 48</p>
+              </div>
+            </div>
+            <div class="bg-white py-6 text-sm flex flex-col gap-y-3 px-6">
+              <p>Text code: 5685</p>
+              <p>
+                To receive SMS correctly, your IP must correspond to the country
+                of the number. <br />
+                Recommended
+                <a
+                  href="https://marsproxies.com/?r=03TJo29706ieRkW"
+                  class="text-black font-semibold"
+                  >proxy Marsproxies.com</a
+                >
+              </p>
             </div>
           </div>
         </div>

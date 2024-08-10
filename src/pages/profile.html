@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- output css  -->
+    <link href="../style/output.css" rel="stylesheet" />
+
+    <!-- icons links  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- tailwindcss cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- external js -->
+    <script src=".././js/index.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>profile</title>
+  </head>
+  <body>
+    <!-- header  -->
+    <header
+      class="border-b border-gray-200 md:py-2 flex flex-col md:flex-row items-center justify-between w-full text-gray-500 text-sm"
+    >
+      <div class="md:hidden absolute top-4 left-4">
+        <img src=".././assets/images/logo.png" alt="logo" />
+      </div>
+      <nav
+        class="absolute md:relative navbar-menu px-4 lg:px-[5%] transition-all ease-in divide-blue-400 md:flex items-center justify-between flex-col md:flex-row gap-y-4 w-full bg-gray-200 md:bg-transparent -translate-x-[100%] md:translate-x-0 py-5 md:py-0"
+      >
+        <div class="">
+          <img src=".././assets/images/logo.png" alt="logo" />
+        </div>
+        <div
+          class="flex flex-col md:flex-row md:items-center gap-x-2 lg:gap-x-12"
+        >
+          <div class="">
+            <ul
+              class="flex flex-col md:flex-row md:items-center gap-x-2 gap-y-5 xl:gap-x-8 text-xl md:text-base mt-6 md:mt-0"
+            >
+              <a href="./activations.html">Activations</a>
+              <a href="../pages/emails.html">Email's</a>
+
+              <!-- for mobile menu  -->
+              <div class="md:hidden flex flex-col gap-y-4">
+                <a href="../pages/blog.html">Blog</a>
+                <a href="../pages/getNumber.html">How to get number</a>
+                <a href="../pages/deposit.html">How to deposit</a>
+                <a href="../pages/useApi.html">How to use API</a>
+                <a href="../pages/contacts.html">Contacts</a>
+                <a href="../pages/referrers.html">Referrers</a>
+                <a href="../pages/developers.html">Developers</a>
+                <a href="../pages/soft.html">Soft</a>
+                <a href="../pages/partners.html">Partners</a>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black manual">
+                  Manuals
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px]"
+                    alt=""
+                  />
+                </div>
+                <div class="manual-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer text-sm font-medium"
+                      href="../pages/blog.html"
+                      >Blog</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/getNumber.html"
+                      >How to get number</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/deposit.html"
+                      >How to deposit</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/useApi.html"
+                      >How to use API</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black feedback">
+                  FeedBack
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="feedback-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/news.html"
+                      >News</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/contacts.html"
+                      >Contacts</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black earnings">
+                  Earnings
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="earnings-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/referrers.html"
+                      >Referrers</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/developers.html"
+                      >Developers</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black partners">
+                  Partners
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="partners-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/soft.html"
+                      >Soft</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/partners.html"
+                      >Partners</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <!-- hidden for mobile screen  -->
+              <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+                <div class="flex gap-x-1 lg:gap-x-2 hover:text-black english">
+                  Languages
+                  <img
+                    src=".././assets/icons/chevron-down-solid.svg"
+                    class="w-[12px] h-"
+                    alt=""
+                  />
+                </div>
+                <div class="english-menu absolute top-7 hidden">
+                  <ul
+                    class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+                  >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/english.html"
+                      >English</a
+                    >
+                    <a
+                      class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer"
+                      href="../pages/pyccknn.html"
+                      >Pyccknn</a
+                    >
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="cursor-pointer flex items-center lg:gap-x-2 mt-6 md:mt-0 text-xl md:text-sm lg:text-base"
+        >
+          <div class="bg-gray-100 py-1 px-2 border rounded-md border-gray-300">
+            82.49 ₽
+          </div>
+          <div class="cursor-pointer gap-x-2 relative hidden md:flex">
+            <div class="flex gap-x-1 lg:gap-x-2 hover:text-black profile">
+              tempotp
+              <img
+                src=".././assets/icons/chevron-down-solid.svg"
+                class="w-[12px] h-"
+                alt=""
+              />
+            </div>
+            <div class="profile-menu absolute top-8 right-0 hidden">
+              <ul
+                class="border shadow-md w-[200px] bg-white rounded-md text-base flex flex-col"
+              >
+                <p class="text-sm text-gray-400 px-3 pt-3">Manage Account</p>
+                <a
+                  class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer text-sm font-medium"
+                  href="../pages/profile.html"
+                  >Profile</a
+                >
+                <a
+                  class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer text-sm font-medium"
+                  href="../pages/refBalance.html"
+                  >Ref. balance</a
+                >
+                <a
+                  class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer text-sm font-medium"
+                  href="../pages/replenish.html"
+                  >Replenish</a
+                >
+                <a
+                  class="hover:bg-[#F3F4F6] border-b py-2 px-3 cursor-pointer text-sm font-medium"
+                  href="../../index.html"
+                  >Log Out</a
+                >
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="absolute top-5 right-6 md:hidden humburger-icons">
+        <i class="fa-solid fa-bars text-2xl cursor-pointer humburger"></i>
+        <i class="fa-solid fa-xmark text-2xl cursor-pointer close hidden"></i>
+      </div>
+    </header>
+
+    <!-- main home page  -->
+    <main class="px-[5%] pb-12 pt-28 md:py-12 flex flex-col bg-gray-100">
+      <div class="flex border-b py-8 gap-x-8 flex-col md:flex-row gap-y-3">
+        <div class="w-full md:w-[35vw]">
+          <h1 class="text-xl text-gray-700">Profile Information</h1>
+          <p class="text-base text-gray-600">
+            Update your account's profile information and email address.
+          </p>
+        </div>
+        <div
+          class="w-full md:w-[55vw] flex flex-col gap-y-1 bg-white rounded-lg"
+        >
+          <div class="px-5 pt-5 pb-4">
+            <p class="text-gray-500">
+              ID: <span class="text-gray-800"> 6101</span>
+            </p>
+            <p class="text-gray-500">
+              E-Mai: <span class="text-gray-800"> akhibiswas189@gmail.com</span>
+            </p>
+            <p class="text-gray-500">
+              Balance: <span class="text-gray-800"> 82.49 ₽</span>
+            </p>
+            <p class="text-gray-500">
+              Ref. balance: <span class="text-gray-800"> 0 ₽</span>
+            </p>
+            <p class="text-gray-500">
+              Referrals: <span class="text-gray-800"> 0</span>
+            </p>
+            <p class="text-gray-500">
+              Type: <span class="text-gray-800"> User</span>
+            </p>
+            <div class="flex flex-col gap-y-1 mt-2">
+              <label class="text-gray-700 text-base">Name</label>
+              <input
+                type="text"
+                class="outline-none py-2 rounded-md shadow-md px-4 border-t w-full md:w-[70%]"
+              />
+            </div>
+          </div>
+          <div
+            class="w-full flex justify-end items-center py-4 bg-[#F9FAFB] px-6"
+          >
+            <button
+              class="py-2 px-4 rounded-md hover:bg-[#374151] bg-[#282f3a] text-white"
+            >
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- api key  -->
+      <div class="flex border-b py-8 gap-x-8 flex-col md:flex-row gap-y-3">
+        <div class="w-full md:w-[35vw]">
+          <h1 class="text-xl text-gray-700">API Key</h1>
+          <p class="text-base text-gray-600">
+            Your personal key to use the API
+          </p>
+        </div>
+        <div
+          class="w-full md:w-[55vw] flex flex-col gap-y-1 bg-white rounded-lg"
+        >
+          <div class="px-5 pt-5 pb-4">
+            <div class="flex flex-col gap-y-1 mt-2">
+              <label class="text-gray-700 text-base">API Key</label>
+              <input
+                type="text"
+                class="outline-none py-2 rounded-md shadow-md px-4 border-t w-full md:w-[70%]"
+              />
+            </div>
+          </div>
+          <div
+            class="w-full flex justify-end items-center py-4 bg-[#F9FAFB] px-6"
+          >
+            <button
+              class="py-2 px-4 rounded-md hover:bg-[#374151] bg-[#282f3a] text-white"
+            >
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Update password  -->
+      <div class="flex border-b py-8 gap-x-8 flex-col md:flex-row gap-y-3">
+        <div class="w-full md:w-[35vw]">
+          <h1 class="text-xl text-gray-700">Update Password</h1>
+          <p class="text-base text-gray-600">
+            Ensure your account is using a long, random password to stay secure
+          </p>
+        </div>
+        <div
+          class="w-full md:w-[55vw] flex flex-col gap-y-1 bg-white rounded-lg"
+        >
+          <div class="px-5 pt-5 pb-4 flex flex-col gap-y-2">
+            <div class="flex flex-col gap-y-2 mt-2">
+              <label class="text-gray-700 text-base">Current Password</label>
+              <input
+                type="text"
+                class="outline-none py-2 rounded-md shadow-md px-4 border-t w-full md:w-[70%]"
+              />
+            </div>
+            <div class="flex flex-col gap-y-1 mt-2">
+              <label class="text-gray-700 text-base">New Password</label>
+              <input
+                type="text"
+                class="outline-none py-2 rounded-md shadow-md px-4 border-t w-full md:w-[70%]"
+              />
+            </div>
+            <div class="flex flex-col gap-y-1 mt-2">
+              <label class="text-gray-700 text-base">Confirm Password</label>
+              <input
+                type="text"
+                class="outline-none py-2 rounded-md shadow-md px-4 border-t w-full md:w-[70%]"
+              />
+            </div>
+          </div>
+          <div
+            class="w-full flex justify-end items-center py-4 bg-[#F9FAFB] px-6"
+          >
+            <button
+              class="py-2 px-4 rounded-md hover:bg-[#374151] bg-[#282f3a] text-white"
+            >
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Referral link  -->
+      <div class="flex border-b py-8 gap-x-8 flex-col md:flex-row gap-y-3">
+        <div class="w-full md:w-[35vw]">
+          <h1 class="text-xl text-gray-700">Referral link</h1>
+          <p class="text-base text-gray-600">
+            Your personal referral link to earn money.
+          </p>
+        </div>
+        <div
+          class="w-full md:w-[55vw] flex flex-col gap-y-1 bg-white rounded-lg"
+        >
+          <div class="px-5 pt-5 pb-4 flex flex-col gap-y-2">
+            <p class="bg-[#F3F4F6] p-4 w-full md:w-[70%] rounded-md">
+              Receive % of revenue from referred clients.
+            </p>
+            <div class="flex flex-col gap-y-1 mt-2">
+              <label class="text-gray-700 text-base">API Key</label>
+              <input
+                type="text"
+                class="outline-none py-2 rounded-md shadow-md px-4 border-t w-full md:w-[70%]"
+              />
+            </div>
+          </div>
+          <div
+            class="w-full flex justify-end items-center py-4 bg-[#F9FAFB] px-6"
+          >
+            <button
+              class="py-2 px-4 rounded-md hover:bg-[#374151] bg-[#282f3a] text-white"
+            >
+              Copy
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Replenishment  -->
+
+      <div class="flex border-b py-8 gap-x-8 flex-col md:flex-row gap-y-3">
+        <div class="w-full md:w-[35vw]">
+          <h1 class="text-xl text-gray-700">Replenishment</h1>
+          <p class="text-base text-gray-600">
+            Replenish the balance in any convenient way.
+          </p>
+        </div>
+        <div
+          class="w-full md:w-[55vw] flex flex-col gap-y-1 bg-white rounded-lg"
+        >
+          <div class="px-5 pt-5 pb-4 flex flex-col gap-y-2">
+            <div class="flex gap-x-2 sm:gap-x-6 gap-y-1 flex-col">
+              <p>Replenishment system</p>
+              <select
+                id="underline_select"
+                class="block py-2 px-4 text-sm text-gray-500 w-full md:w-[70%] bg-transparent rounded-md cursor-pointer dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer bg-white border border-gray-300"
+              >
+                <option selected>Cryptomus</option>
+                <option value="News">Enot.io</option>
+                <option value="News">Lava</option>
+              </select>
+            </div>
+            <p
+              class="bg-[#F3F4F6] px-4 py-6 my-4 rounded-md text-sm w-full md:w-[70%] text-gray-600"
+            >
+              USDT (Crypt) <br />
+              XMR (Crypt) <br />
+              USDC (Crypt) <br />
+              VERSE (Crypt) <br />
+              TRX (Crypt) <br />
+              SOL (Crypt) <br />
+              MATIC (Crypt) <br />
+              LTC (Crypt) <br />
+              ETH (Crypt) <br />
+              DOGE (Crypt) <br />
+              DAI (Crypt) <br />
+              DASH (Crypt) <br />
+              CGPT (Crypt) <br />
+              BTC (Crypt) <br />
+              BNB (Crypt) <br />
+              BCH (Crypt) <br />
+              AVAX (Crypt) <br />
+            </p>
+            <div class="flex flex-col gap-y-1 mt-2">
+              <label class="text-gray-700 text-base">Amount</label>
+              <input
+                type="text"
+                class="outline-none py-2 rounded-md shadow-md px-4 border-t w-full md:w-[70%]"
+              />
+            </div>
+          </div>
+          <div
+            class="w-full flex justify-end items-center py-4 bg-[#F9FAFB] px-6"
+          >
+            <button
+              class="py-2 px-4 rounded-md hover:bg-[#374151] bg-[#282f3a] text-white"
+            >
+              Replenish
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- payment  -->
+      <div class="flex border-b py-8 gap-x-8 flex-col md:flex-row gap-y-3">
+        <div class="w-full md:w-[35vw]">
+          <h1 class="text-xl text-gray-700">Payments</h1>
+          <p class="text-base text-gray-600">
+            Choose a payment system and specify your details in the system.
+          </p>
+        </div>
+        <div
+          class="w-full md:w-[55vw] flex flex-col gap-y-1 bg-white rounded-lg"
+        >
+          <div class="px-5 pt-5 pb-4 flex flex-col gap-y-2">
+            <div class="flex gap-x-2 sm:gap-x-6 gap-y-1 flex-col">
+              <p>Payment system</p>
+              <select
+                id="underline_select"
+                class="block py-2 px-4 text-sm text-gray-500 w-full md:w-[70%] bg-transparent rounded-md cursor-pointer dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer bg-white border border-gray-300"
+              >
+                <option selected>Cryptomus</option>
+                <option value="News">Enot.io</option>
+                <option value="News">Lava</option>
+              </select>
+            </div>
+            <p
+              class="bg-[#F3F4F6] px-4 py-6 my-4 rounded-md text-sm w-full md:w-[70%] text-gray-600"
+            >
+              Только карты РФ. Минимальная сумма для выплаты - 1000 руб.,
+              максимальная - 50000 руб. Комиссия 5% + 50 руб.
+            </p>
+            <div class="flex flex-col gap-y-1 mt-2">
+              <label class="text-gray-700 text-base">Wallet number</label>
+              <input
+                type="text"
+                class="outline-none py-2 rounded-md shadow-md px-4 border-t w-full md:w-[70%]"
+              />
+            </div>
+          </div>
+          <div
+            class="w-full flex justify-end items-center py-4 bg-[#F9FAFB] px-6"
+          >
+            <button
+              class="py-2 px-4 rounded-md hover:bg-[#374151] bg-[#282f3a] text-white"
+            >
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Two factor authentication  -->
+      <div class="flex border-b py-8 gap-x-8 flex-col md:flex-row gap-y-3">
+        <div class="w-full md:w-[35vw]">
+          <h1 class="text-xl text-gray-700">Two Factor Authentication</h1>
+          <p class="text-base text-gray-600">
+            Add additional security to your account using two factor
+            authentication.
+          </p>
+        </div>
+        <div
+          class="w-full md:w-[55vw] flex flex-col gap-y-1 bg-white rounded-lg"
+        >
+          <p class="px-4 mt-5">
+            You have not enabled two factor authentication.
+          </p>
+          <p class="p-4">
+            When two factor authentication is enabled, you will be prompted for
+            a secure, random token during authentication. You may retrieve this
+            token from your phone's Google Authenticator application.
+          </p>
+          <div class="w-full py-4 px-6">
+            <button
+              class="py-2 px-4 rounded-md hover:bg-[#374151] bg-[#282f3a] text-white"
+            >
+              Enable
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Browser session  -->
+      <div class="flex border-b py-8 gap-x-8 flex-col md:flex-row gap-y-3">
+        <div class="w-full md:w-[35vw]">
+          <h1 class="text-xl text-gray-700">Browser Sessions</h1>
+          <p class="text-base text-gray-600">
+            Manage and log out your active sessions on other browsers and
+            devices.
+          </p>
+        </div>
+        <div
+          class="w-full md:w-[55vw] flex flex-col gap-y-1 bg-white rounded-lg"
+        >
+          <p class="p-4 m-5 bg-[#F3F4F6] text-sm">
+            If necessary, you may log out of all of your other browser sessions
+            across all of your devices. Some of your recent sessions are listed
+            below; however, this list may not be exhaustive. If you feel your
+            account has been compromised, you should also update your password.
+          </p>
+
+          <div class="w-full py-4 px-6">
+            <button
+              class="py-2 px-4 rounded-md hover:bg-[#374151] bg-[#282f3a] text-white"
+            >
+              Enable
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="flex justify-center items-center py-6 bg-gray-100 text-sm md:text-base"
+    >
+      <p>© 2024 smslive.pro. All rights reserved. Agreement.</p>
+    </footer>
+  </body>
+</html>
